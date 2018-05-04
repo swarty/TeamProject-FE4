@@ -65,7 +65,7 @@ gulp.task('babel', function(){
 
 gulp.task('sass', function(){ // Создаем таск Sass
   return gulp.src('app/sass/**/*.sass') // Берем источник
-      // .pipe(wait(1500))
+      .pipe(wait(1500))
       .pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
       // .pipe(sass({outputStyle: 'compressed'}))
       .pipe(autoprefixer(['> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы

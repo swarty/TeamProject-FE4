@@ -1,66 +1,123 @@
 @font-face {
-  font-family: "Heuristica-italic";
-  font-weight: normal;
+  font-family: "OpenSans-light";
+  font-weight: "300";
   font-style: normal;
-  src: url("../../fonts/heuristica-italic.eot");
-  src: url("../../fonts/heuristica-italic.eot?#iefix") format("embedded-opentype"), url("../../fonts/heuristica-italic.woff") format("woff"), url("../../fonts/heuristica-italic.ttf") format("truetype"); }
+  src: url("../fonts/OpenSans-Light.eot");
+  src: url("../fonts/OpenSans-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Light.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "Heuristica-regular";
-  font-weight: normal;
+  font-family: "OpenSans-regular";
+  font-weight: "400";
   font-style: normal;
-  src: url("../../fonts/heuristica-regular.eot");
-  src: url("../../fonts/heuristica-regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/heuristica-regular.woff") format("woff"), url("../../fonts/heuristica-regular.ttf") format("truetype"); }
+  src: url("../fonts/OpenSans-Regular.eot");
+  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "Lato-bold";
-  font-weight: normal;
+  font-family: "OpenSans-bold";
+  font-weight: "600";
   font-style: normal;
-  src: url("../../fonts/Lato-Bold.eot");
-  src: url("../../fonts/Lato-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Lato-Bold.woff") format("woff"), url("../../fonts/Lato-Bold.ttf") format("truetype"); }
+  src: url("../fonts/OpenSans-bold.eot");
+  src: url("../fonts/OpenSans-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-bold.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "Lato-regular";
-  font-weight: normal;
+  font-family: "OpenSans-Semibold";
+  font-weight: "700";
   font-style: normal;
-  src: url("../../fonts/Lato-Regular.eot");
-  src: url("../../fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/Lato-Regular.woff") format("woff"), url("../../fonts/Lato-Regular.ttf") format("truetype"); }
+  src: url("../fonts/OpenSans-SemiBold.eot");
+  src: url("../fonts/OpenSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-SemiBold.ttf") format("truetype"); }
 
 @font-face {
   font-family: "OpenSans-ExtraBold";
-  font-weight: normal;
+  font-weight: "800";
   font-style: normal;
-  src: url("../../fonts/OpenSans-ExtraBold.eot");
-  src: url("../../fonts/OpenSans-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../../fonts/OpenSans-ExtraBold.woff") format("woff"), url("../../fonts/OpenSans-ExtraBold.ttf") format("truetype"); }
+  src: url("../fonts/OpenSans-ExtraBold.eot");
+  src: url("../fonts/OpenSans-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-ExtraBold.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "OpenSans-Regular";
-  font-weight: normal;
+  font-family: "UbuntuMono-regular";
+  font-weight: "300";
   font-style: normal;
-  src: url("../../fonts/OpenSans-Regular.eot");
-  src: url("../../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/OpenSans-Regular.woff") format("woff"), url("../../fonts/OpenSans-Regular.ttf") format("truetype"); }
+  src: url("../fonts/UbuntuMono-Regular.eot");
+  src: url("../fonts/UbuntuMono-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/UbuntuMono-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "UbuntuMono-bold";
+  font-weight: "600";
+  font-style: normal;
+  src: url("../fonts/UbuntuMono-Bold.eot");
+  src: url("../fonts/UbuntuMono-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/UbuntuMono-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "MuseoSans-medium";
+  font-weight: "500";
+  font-style: normal;
+  src: url("../fonts/MuseoSansCyrl-500.eot");
+  src: url("../fonts/MuseoSansCyrl-500.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-500.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "MuseoSans-semibold";
+  font-weight: "700";
+  font-style: normal;
+  src: url("../fonts/museo-sans-semibold.eot");
+  src: url("../fonts/museo-sans-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/museo-sans-semibold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "MuseoSans-extrabold";
+  font-weight: "900";
+  font-style: normal;
+  src: url("../fonts/MuseoSansCyrl-900.eot");
+  src: url("../fonts/MuseoSansCyrl-900.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-900.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "ProximaNova-regular";
+  font-weight: "400";
+  font-style: normal;
+  src: url("../fonts/ProximaNova-Bold.eot");
+  src: url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "ProximaNova-bold";
+  font-weight: "600";
+  font-style: normal;
+  src: url("../fonts/ProximaNova-Regular.eot");
+  src: url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular.ttf") format("truetype"); }
 
 h1, h2, h3, h4, h5, h6, p, span {
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h4 {
+  font-family: "MuseoSans-extrabold", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase; }
 
 h1 {
-  color: #fff;
-  font-family: "OpenSans-ExtraBold", sans-serif;
-  font-size: 60px; }
+  font-size: 64px;
+  line-height: 1.17; }
 
 h2 {
-  color: #fff;
-  font-family: "OpenSans-ExtraBold", sans-serif;
-  font-size: 38px; }
+  font-size: 42px;
+  line-height: 1.2;
+  margin-bottom: 26px; }
 
 h3 {
-  color: #fff;
-  font-family: "Lato-bold", sans-serif;
-  font-size: 24px; }
+  font-family: "UbuntuMono-bold" , sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.33; }
 
-p {
-  font-family: "Heuristica-regular", sans-serif;
-  font-size: 22px; }
+h4 {
+  font-size: 22px;
+  line-height: 1.27; }
+
+p, li {
+  font-weight: 400;
+  font-family: "OpenSans-regular", sans-serif;
+  font-size: 18px;
+  line-height: 1.45; }
+
+h5 {
+  font-family: "ProximaNova-regular", sans-serif; }
 
 .container {
   max-width: 1170px;
@@ -106,7 +163,11 @@ ul, ol {
   justify-content: space-between;
   align-items: flex-start; }
 
-.s_hero {
-  background-color: black;
-  width: 40px;
-  height: 40px; }
+.site-button {
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 23px 29px;
+  text-transform: uppercase;
+  line-height: 1;
+  background-color: linear-gradient(to right, #f16f5c 0%, #f6290c 0%, #f02f17 0%, #ffb31b 0%, #ffb31b 0%, #ffb31b 34%, #fb1a3b 69%, #fb1a3b 100%);
+  background-size: 200%; }
