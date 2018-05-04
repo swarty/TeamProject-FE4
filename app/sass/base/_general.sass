@@ -56,5 +56,19 @@ ul,ol
   padding: 23px 29px
   text-transform: uppercase
   line-height: 1
-  background-color: $grad
-  background-size: 200%
+  background: $grad
+  background-size: 170%
+  background-position: 70%
+  border: none
+  color: $white
+  letter-spacing: 0.065em
+  font-family: MuseoSans-extrabold, sans-serif
+  transition: all .4s
+  cursor: pointer
+  border-radius: 5px
+  &:hover
+    background-position: 20%
+    background-size: 150%
+  &:active
+    background-size: 300%
+    background: $grad-active
