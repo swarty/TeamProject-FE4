@@ -197,7 +197,18 @@ ul, ol {
     width: 26px;
     height: 6px; }
 
-.b-title img {
+.b-title__text {
+  max-width: 430px;
+  width: 100%; }
+  .b-title__text p {
+    text-align: right; }
+    .b-title__text p span {
+      background-color: #242427;
+      color: #00bbd3;
+      font-size: inherit;
+      padding: 0 2px; }
+
+img {
   display: block;
   width: 100%;
   height: auto; }
