@@ -201,3 +201,10 @@ ul, ol {
   width: 40px;
   height: 40px;
   background-color: #0000FF; }
+
+.s__area {
+  background-color: blue; }
+
+.s__area-header, .s__area-block {
+  max-width: 100%;
+  width: 100%; }
