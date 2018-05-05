@@ -1,12 +1,72 @@
 .s_full
+      position: relative
+      &__c-left
+            position: absolute
+            left: 80px
+            top: 80%
+            z-index: 3
+            transform: rotate(90deg) translateX(-50%)
+            transform-origin: 3%
+            span
+                  font-weight: 600
+                  font-size: 16px
+                  margin-right: 40px
+                  font-family: "UbuntuMono-regular", sans-serif
+            +r(1365)
+                  display: none
+      &__c-right
+            position: absolute
+            right: 80px
+            top: 132px
+            z-index: 3
+            transform: rotate(90deg) translateX(100%)
+            transform-origin: 100%
+            span
+                  font-weight: 600
+                  font-size: 16px
+                  margin-right: 40px
+                  font-family: "UbuntuMono-regular", sans-serif
+            span:first-child
+                  text-transform: uppercase
+                  color: $cyan
+            +r(1365)
+                  display: none
+      .container 
+            z-index: 2
+            +r(1365)
+                  padding: 0 26px
       &__bg
+            position: absolute
+            max-height: 558px
+            max-width: 1000000px
+            width: 100%
+            height: 100%
+            background-image: url(../img/full-bg.jpg)
+            bottom: 0
+            left: 0
+            transform: skewy(-15deg) translateY(-150px)
+            z-index: 2
+      &__bg-main
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            background-image: url(../img/full-bg.jpg)
+            overflow: hidden
+            max-height: 1000px
+            z-index: 0
+      &__wrapper
+            max-height: 1450px
       &__head-wr
             position: relative
-            transform: translate(-90px, -77px)
+            transform: translate(-90px, -79px)
+            +r(1365)
+                  transform: translate(0, -56px)
       &__header
+            background-color: #f8f8f8
             max-width: 946px
             width: 100%
-            background-color: $white
             box-shadow: -14.326px 46.859px 58px 0px rgba(0, 0, 0, 0.15)
             padding-top: 80px
             padding-bottom: 490px
@@ -14,7 +74,9 @@
             padding-right: 95px
             position: relative
             z-index: 1
-            
+            +r(1365)
+                  max-width: 100%
+
             // &::before
             //       content: ""
             //       position: absolute
@@ -73,8 +135,9 @@
                   color: $cyan
                   font-weight: inherit
       &__main
-            transform: translateY(-285px)
+            transform: translateY(-315px)
             max-width: 1076px
+            height: 827px
             width: 100%
             box-shadow: -14.326px 46.859px 58px 0px rgba(0, 0, 0, 0.15)
             background-color: #fff
@@ -83,21 +146,34 @@
             padding-left: 28px
             padding-bottom: 55px
             position: relative
-            overflow: hidden
             &::before
                   position: absolute
                   left: 0
                   bottom: 0
-                  transform: translateY(-5%)
-                  width: 200px
-                  height: 300px
+                  width: 500px
+                  height: 316px
                   content: url(../img/full-main-bg.png)
                   display: block
+                  overflow: hidden
+      &__after-wr
+            max-width: 1200px
+            margin: 0 auto
+            position: relative
+      &__after
+            max-width: 1076px
+            width: 100%
+            height: 450px
+            background-image: url(../img/full-before.jpg)
+            position: absolute
+            bottom: 30px
+            right: -29px
+            z-index: 0
       &__wr
             // transform: translateY(-330px)
             align-items: flex-end
             margin-bottom: 35px
       &__block
+            position: relative
             max-width: 49%
             width: 100%
       &__img
@@ -106,6 +182,15 @@
             max-width: 100%
             width: 100%
             margin-bottom: 100px
+            position: relative
+            &::after
+                  content: ""
+                  background-color: $gray
+                  height: 3px
+                  width: 95%
+                  position: absolute
+                  bottom: -63px
+                  right: -150px
       &__text
             max-width: 360px
             width: 100%
@@ -130,10 +215,11 @@
                         transform: translateX(-50%)
             p
                   text-align: center
-                  font-size: 16px
+                  font-size: 14px
                   font-weight: bold
                   font-family:  'OpenSans-Extrabold', sans-serif
                   span
+                        font-size: inherit
                         font-weight: 500
                         font-family: 'OpenSans-regular', sans-serif
       &__button
@@ -142,6 +228,8 @@
             margin-left: auto
             button
                   margin: 0 auto
+      &__button, &__text-wr, &__wr
+            transform: translateY(-300px)
       &__button-text
             margin-bottom: 55px
             h5
@@ -160,3 +248,26 @@
                   font-weight: 900
                   text-align: right
                   letter-spacing: 0.065em
+      &__t-left, &__t-top
+            font-size: 36px
+            position: absolute
+            top: 0
+            left: 0
+            font-family: "UbuntuMono-bold" , sans-serif
+            &::after
+                  content: ""
+                  position: relative
+                  display: inline-block
+                  width: 135px
+                  height: 2px
+                  background-color: $gray
+                  margin-left: 47px
+      &__t-left
+            transform: rotate(-90deg) translate(-86% , -35px)
+            transform-origin: 0% 100%
+      &__t-top
+            left: unset
+            right: 5px
+            transform: translateY(-80px)
+
+
