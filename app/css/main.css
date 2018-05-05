@@ -213,10 +213,43 @@ img {
   width: 100%;
   height: auto; }
 
+.line {
+  width: 120px;
+  border: 1px solid #00bcd4; }
+
 .s_hero {
-  width: 40px;
-  height: 40px;
-  background-color: #0000FF; }
+  background-color: #2a2a2f;
+  padding: 33px 80px 89px 80px; }
+  .s_hero__title {
+    justify-content: flex-start; }
+  .s_hero__logo {
+    padding-top: 10px; }
+  .s_hero__name {
+    margin-left: 20px;
+    color: #fff; }
+  .s_hero__text {
+    width: 165px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600; }
+  .s_hero__help {
+    padding-top: 15px;
+    font-size: 14px; }
+  .s_hero__time {
+    position: absolute;
+    top: 100%;
+    margin-top: 137px;
+    width: 650px;
+    justify-content: flex-start;
+    align-items: center;
+    transform: rotate(90deg); }
+    .s_hero__time p {
+      margin-left: 10px;
+      color: #fff;
+      font-size: 18px; }
+      .s_hero__time p span {
+        color: #00bcd4;
+        font-size: 23px; }
 
 .s__area {
   background-color: blue; }
