@@ -307,29 +307,89 @@ img {
   background-color: #fff;
   margin-left: auto;
   padding-right: 93px;
-  padding-left: 28px; }
+  padding-left: 28px;
+  padding-bottom: 55px;
+  position: relative;
+  overflow: hidden; }
+  .s_full__main::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(-5%);
+    width: 200px;
+    height: 300px;
+    content: url(../img/full-main-bg.png);
+    display: block; }
 
 .s_full__wr {
-  transform: translateY(-330px);
   align-items: flex-end;
-  margin-bottom: 105px; }
+  margin-bottom: 35px; }
 
 .s_full__block {
   max-width: 49%;
   width: 100%; }
 
-.s_full__img {
-  margin-bottom: 45px; }
+.s_full__text-wr {
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: 100px; }
 
 .s_full__text {
-  max-width: 350px;
+  max-width: 360px;
   width: 100%;
-  margin: 0 automb; }
+  margin: 0 auto; }
   .s_full__text h5 {
+    text-align: center;
     font-size: 24px;
     font-family: "MuseoSans-extrabold", sans-serif;
     font-weight: 900;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 27px;
+    text-transform: uppercase;
+    position: relative; }
+    .s_full__text h5::after {
+      content: "";
+      position: absolute;
+      width: 110px;
+      height: 3px;
+      background-color: #00bbd3;
+      left: 50%;
+      bottom: -12px;
+      transform: translateX(-50%); }
+  .s_full__text p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'OpenSans-Extrabold', sans-serif; }
+    .s_full__text p span {
+      font-weight: 500;
+      font-family: 'OpenSans-regular', sans-serif; }
+
+.s_full__button {
+  flex-direction: column;
+  max-width: 600px;
+  margin-left: auto; }
+  .s_full__button button {
+    margin: 0 auto; }
+
+.s_full__button-text {
+  margin-bottom: 55px; }
+  .s_full__button-text h5 {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-family: 'UbuntuMono-bold', sans-serif;
+    font-weight: 900;
+    margin-bottom: 5px; }
+    .s_full__button-text h5 span {
+      color: #242427;
+      background-color: #00bbd3;
+      padding: 5px 9px; }
+  .s_full__button-text p {
+    font-size: 18px;
+    font-family: 'UbuntuMono-bold', sans-serif;
+    font-weight: 900;
+    text-align: right;
+    letter-spacing: 0.065em; }
 
 .s_area__block {
   max-width: 100%;
