@@ -74,20 +74,32 @@ ul,ol
     background: $grad-active
 
 
-  .b-title
-    h2
+.b-title
+  h2
+    position: relative
+    &::before
+      content: ""
       position: relative
-      &::before
-        content: ""
-        position: relative
-        top: 0
-        left: 0
-        background-color: $cyan
-        width: 26px
-        height: 6px
-
-
-  img
-    display: block
+      top: 0
+      left: 0
+      background-color: $cyan
+      width: 26px
+      height: 6px
+  &__text
+    max-width: 430px
     width: 100%
-    height: auto
+    p
+      text-align: right
+      span
+        background-color: $gray
+        color: $cyan
+        font-size: inherit
+        padding: 0 2px
+    
+
+
+
+img
+  display: block
+  width: 100%
+  height: auto
