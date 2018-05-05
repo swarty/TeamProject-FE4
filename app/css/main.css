@@ -204,6 +204,8 @@ ul, ol {
   width: 100%;
   margin-left: auto; }
   .b-title__text p {
+    font-family: "OpenSans-ExtraBold", sans-serif;
+    font-weight: 800;
     text-align: right;
     margin-bottom: 4px;
     line-height: 1.3; }
@@ -232,16 +234,88 @@ img {
   height: 40px;
   background-color: #0000FF; }
 
+.s_full__head-wr {
+  position: relative;
+  transform: translate(-90px, -77px); }
+
 .s_full__header {
   max-width: 946px;
   width: 100%;
   background-color: #fff;
   box-shadow: -14.326px 46.859px 58px 0px rgba(0, 0, 0, 0.15);
-  position: relative;
   padding-top: 80px;
   padding-bottom: 490px;
   padding-left: 95px;
-  padding-right: 95px; }
+  padding-right: 95px;
+  position: relative;
+  z-index: 1; }
+
+.s_full__before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 830px;
+  display: block;
+  background-image: url(../img/full-before.jpg);
+  background-repeat: repeat;
+  background-position: center;
+  transform: translate(-45px, -25px); }
+
+.s_full__title {
+  max-width: 540px;
+  width: 100%;
+  position: relative; }
+  .s_full__title::before {
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+    transform: translatex(-50%);
+    content: "";
+    background-color: #00bbd3;
+    height: 1px;
+    width: 100%;
+    margin-bottom: 17px; }
+
+.s_full__vert {
+  position: absolute;
+  top: 0;
+  right: -40px;
+  transform: rotate(90deg) translatey(-200px);
+  transform-origin: 5% 40%; }
+  .s_full__vert p {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    max-width: 200px;
+    width: 100%;
+    font-family: "OpenSans-Extrabold", sans-serif;
+    font-weight: 800; }
+  .s_full__vert span {
+    font-family: inherit;
+    text-transform: uppercase;
+    font-size: inherit;
+    color: #00bbd3;
+    font-weight: inherit; }
+
+.s_full__main {
+  transform: translateY(-285px);
+  max-width: 1076px;
+  width: 100%;
+  box-shadow: -14.326px 46.859px 58px 0px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  margin-left: auto;
+  padding-right: 93px;
+  padding-left: 28px; }
+
+.s_full__wr {
+  transform: translateY(-330px);
+  align-items: flex-end; }
+
+.s_full__block {
+  max-width: 49%;
+  width: 100%; }
 
 .s_area__block {
   max-width: 100%;

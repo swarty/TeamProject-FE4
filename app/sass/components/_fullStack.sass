@@ -1,18 +1,89 @@
 .s_full
-   &__bg
-      // max-width: 100%
-      // width: 100%
-      // height: 100%
-      // background-image: url(../img/img1_area.png)
-      // background-color: red
-      // background-repeat: repeat
-   &__header
-      max-width: 946px
-      width: 100%
-      background-color: $white
-      box-shadow: -14.326px 46.859px 58px 0px rgba(0, 0, 0, 0.15)
-      position: relative
-      padding-top: 80px
-      padding-bottom: 490px
-      padding-left: 95px
-      padding-right: 95px
+      &__bg
+      &__head-wr
+            position: relative
+            transform: translate(-90px, -77px)
+      &__header
+            max-width: 946px
+            width: 100%
+            background-color: $white
+            box-shadow: -14.326px 46.859px 58px 0px rgba(0, 0, 0, 0.15)
+            padding-top: 80px
+            padding-bottom: 490px
+            padding-left: 95px
+            padding-right: 95px
+            position: relative
+            z-index: 1
+            
+            // &::before
+            //       content: ""
+            //       position: absolute
+            //       left: -45px
+            //       top: -25px
+            //       width: 320px
+            //       height: 830px
+            //       background-image: url(../img/full-before.jpg)
+            //       background-repeat: repeat
+            //       background-position: center
+            //       z-index: 0
+      &__before
+            position: absolute
+            top: 0
+            left: 0
+            width: 320px
+            height: 830px
+            display: block
+            background-image: url(../img/full-before.jpg)
+            background-repeat: repeat
+            background-position: center
+            transform: translate(-45px, -25px)
+      &__title
+            max-width: 540px
+            width: 100%
+            position: relative
+            &::before
+                  position: relative
+                  display: block
+                  top: 0
+                  left: 0
+                  transform: translatex(-50%)
+                  content: ""
+                  background-color: $cyan
+                  height: 1px
+                  width: 100%
+                  margin-bottom: 17px
+      &__vert
+            position: absolute
+            top: 0
+            right: -40px
+            transform: rotate(90deg) translatey(-200px)
+            transform-origin: 5% 40%
+            p
+                  text-transform: uppercase
+                  font-size: 14px
+                  font-weight: bold
+                  max-width: 200px
+                  width: 100%
+                  font-family: "OpenSans-Extrabold", sans-serif
+                  font-weight: 800
+            span
+                  font-family: inherit
+                  text-transform: uppercase
+                  font-size: inherit
+                  color: $cyan
+                  font-weight: inherit
+      &__main
+            transform: translateY(-285px)
+            max-width: 1076px
+            width: 100%
+            box-shadow: -14.326px 46.859px 58px 0px rgba(0, 0, 0, 0.15)
+            background-color: #fff
+            margin-left: auto
+            padding-right: 93px
+            padding-left: 28px
+      &__wr
+            transform: translateY(-330px)
+            align-items: flex-end
+      &__block
+            max-width: 49%
+            width: 100%
