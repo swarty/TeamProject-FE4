@@ -185,22 +185,42 @@ ul, ol {
   .site-button:active {
     background-size: 300%;
     background: linear-gradient(to right, #f03219 0%, #ffb31a 30%, #ffb31a 35%, #fb183a 89%, #fb183a 100%); }
-  .site-button .b-title h2 {
-    position: relative; }
-    .site-button .b-title h2::before {
-      content: "";
-      position: relative;
-      top: 0;
-      left: 0;
-      background-color: #00bbd3;
-      width: 26px;
-      height: 6px; }
-  .site-button img {
-    display: block;
-    width: 100%;
-    height: auto; }
+
+.b-title h2 {
+  position: relative; }
+  .b-title h2::before {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #00bbd3;
+    width: 26px;
+    height: 6px; }
+
+.b-title__text {
+  max-width: 430px;
+  width: 100%; }
+  .b-title__text p {
+    text-align: right; }
+    .b-title__text p span {
+      background-color: #242427;
+      color: #00bbd3;
+      font-size: inherit;
+      padding: 0 2px; }
+
+img {
+  display: block;
+  width: 100%;
+  height: auto; }
 
 .s_hero {
   width: 40px;
   height: 40px;
   background-color: #0000FF; }
+
+.s__area {
+  background-color: blue; }
+
+.s__area-header, .s__area-block {
+  max-width: 100%;
+  width: 100%; }
