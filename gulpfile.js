@@ -27,6 +27,7 @@ gulp.task('serve', ['sass', 'pug'], function() {
   gulp.watch("app/js/*.js", ['babel', 'sass']);
   gulp.watch('app/sass/**/*.sass', ['sass']);
   gulp.watch('app/pug/**/*.pug', ['pug']);
+  gulp.watch('app/css/**/*.css');
   gulp.watch("app/*.html").on('change', browserSync.reload);
 });
 

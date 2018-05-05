@@ -218,6 +218,17 @@ img {
   height: 40px;
   background-color: #0000FF; }
 
+.s_full__header {
+  max-width: 946px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: -14.326px 46.859px 58px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 490px;
+  padding-left: 95px;
+  padding-right: 95px; }
+
 .s_area__block {
   max-width: 100%;
   width: 100%; }
