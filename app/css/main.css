@@ -242,14 +242,25 @@ img {
   padding-bottom: 490px;
   padding-left: 95px;
   padding-right: 95px; }
-<<<<<<< HEAD
   .s_full__header::before {
     position: absolute;
     top: -25px;
     left: -45px; }
-=======
->>>>>>> cde10552c34a22a5ed54f5f7fa83e6adee3c81f3
+
+.s_area__wrap {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: red; }
 
 .s_area__block {
   max-width: 100%;
   width: 100%; }
+
+.s_area__text {
+  max-width: 50%;
+  width: 50%; }
+
+.s_area__img-wr {
+  height: 76px; }
