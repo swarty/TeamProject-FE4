@@ -185,3 +185,8 @@ ul, ol {
   .site-button:active {
     background-size: 300%;
     background: linear-gradient(to right, #f03219 0%, #ffb31a 30%, #ffb31a 35%, #fb183a 89%, #fb183a 100%); }
+
+.s_hero {
+  width: 40px;
+  height: 40px;
+  background-color: #0000FF; }
