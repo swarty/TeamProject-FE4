@@ -4,13 +4,13 @@
 
 
 .container
-  max-width: 1170px
+  max-width: 1200px
   width: 100%
   position: relative
   margin: 0 auto
   padding: 0 15px
   +r(999)
-    padding: 0 25px
+    padding: 0 26px
   +r(767)
     padding: 0 16px
 
@@ -49,3 +49,39 @@ ul,ol
   justify-content: space-between
   align-items: flex-start
 
+
+.site-button
+  text-transform: uppercase
+  font-size: 16px
+  padding: 23px 29px
+  text-transform: uppercase
+  line-height: 1
+  background: $grad
+  background-size: 170%
+  background-position: 70%
+  border: none
+  color: $white
+  letter-spacing: 0.065em
+  font-family: MuseoSans-extrabold, sans-serif
+  transition: all .4s
+  cursor: pointer
+  border-radius: 5px
+  &:hover
+    background-position: 20%
+    background-size: 150%
+  &:active
+    background-size: 300%
+    background: $grad-active
+
+
+.b-title
+  h2
+    position: relative
+    &::before
+      content: ""
+      position: relative
+      top: 0
+      left: 0
+      background-color: $cyan
+      width: 26px
+      height: 6px
