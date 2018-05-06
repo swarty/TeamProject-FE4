@@ -298,11 +298,6 @@ img {
   width: 100%;
   height: auto; }
 
-.s_hero {
-  width: 40px;
-  height: 40px;
-  background-color: #0000FF; }
-
 .s_full {
   position: relative; }
   @media all and (max-width: 767px) {
@@ -742,7 +737,3 @@ img {
     @media all and (max-width: 767px) {
       .s_full__t-top {
         transform: translateY(-30px); } }
-
-.s_area__block {
-  max-width: 100%;
-  width: 100%; }
