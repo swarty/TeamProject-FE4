@@ -80,8 +80,6 @@ ul,ol
   h2
     position: relative
     display: inline-block
-    +r(1365)
-      padding-left: 20px
     &::before
       content: ""
       position: relative
@@ -91,13 +89,30 @@ ul,ol
       display: inline-block
       width: 26px
       height: 6px
+    +r(767)
+      margin-bottom: 30px
+      text-align: center
+      &::after
+        content: ""
+        position: absolute
+        width: 150px
+        height: 2px
+        background-color: $gray
+        left: 50%
+        transform: translatex(-50%)
+        bottom: -15px
+      &::before
+        width: 17px
   &__text
     max-width: 430px
     width: 100%
     margin-left: auto
     +r(1365)
-      max-width: 325px 
+      max-width: 320px 
       margin: 0
+      transform: translateX(-20px)
+    +r(767)
+      transform: translate(0)
     p
       font-family: "OpenSans-ExtraBold", sans-serif
       font-weight: 800
@@ -113,10 +128,21 @@ ul,ol
         margin-left: 4px
         font-weight: 900
         font-family: "MuseoSans-extrabold", sans-serif
+        +r(1365)
+          padding: 3px 4px
+        +r(767)
+          background-color: transparent
+      +r(767)
+        text-align: center
+        text-transform: uppercase
   &__divider
     width: 100%
     height: 4px
     background-color: $gray
+    +r(1365)
+      height: 2px
+    +r(767)
+      display: none
     
 
 

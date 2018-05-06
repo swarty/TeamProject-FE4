@@ -1,5 +1,8 @@
 .s_full
       position: relative
+      +r(767)
+          background-image: url(../img/full-bg.jpg);
+          padding-bottom: 60px
       &__c-left
             position: absolute
             left: 80px
@@ -35,6 +38,8 @@
             z-index: 2
             +r(1365)
                   padding: 0 26px
+            +r(767)
+                  padding: 0 16px
       &__bg
             position: absolute
             max-height: 558px
@@ -46,6 +51,10 @@
             left: 0
             transform: skewy(-15deg) translateY(-150px)
             z-index: 2
+            +r(1365)
+                  transform: skewy(-15deg) translateY(-70px)
+            +r(767)
+                  display: none
       &__bg-main
             position: absolute
             width: 100%
@@ -56,13 +65,19 @@
             overflow: hidden
             max-height: 1000px
             z-index: 0
+            +r(999)
+                  max-height: 760px
       &__wrapper
             max-height: 1450px
+            +r(767)
+                  max-height: 100%
       &__head-wr
             position: relative
             transform: translate(-90px, -79px)
             +r(1365)
                   transform: translate(0, -56px)
+            +r(767)
+                  transform: translate(0)
       &__header
             background-color: #f8f8f8
             max-width: 946px
@@ -76,7 +91,11 @@
             z-index: 1
             +r(1365)
                   max-width: 100%
-
+                  padding: 77px 20px
+            +r(767)
+                  background-color: transparent
+                  box-shadow: none
+                  padding: 50px 0
             // &::before
             //       content: ""
             //       position: absolute
@@ -99,6 +118,8 @@
             background-repeat: repeat
             background-position: center
             transform: translate(-45px, -25px)
+            +r(1365)
+                  display: none
       &__title
             max-width: 540px
             width: 100%
@@ -114,6 +135,13 @@
                   height: 2px
                   width: 100%
                   margin-bottom: 17px
+            +r(1365)
+                  margin-bottom: 160px
+                  max-width: 390px
+            +r(767)
+                  margin-bottom: 30px
+                  &::before
+                        display: none
       &__vert
             position: absolute
             top: 0
@@ -134,6 +162,26 @@
                   font-size: inherit
                   color: $cyan
                   font-weight: inherit
+            +r(1365)
+                  right: 67px
+                  top: 20px
+                  p
+                        font-size: 12px
+            +r(767)
+                  position: relative
+                  transform: rotate(0deg) translate(0)
+                  top: 0
+                  right: 0
+                  left: 0
+                  text-align: center
+                  border: 2px solid $cyan
+                  padding: 5px 0
+                  margin-bottom: 25px
+                  p
+                        margin: 0 auto
+                        text-transform: unset
+                  span
+                        text-transform: unset
       &__main
             transform: translateY(-315px)
             max-width: 1076px
@@ -155,6 +203,29 @@
                   content: url(../img/full-main-bg.png)
                   display: block
                   overflow: hidden
+            +r(1365)
+                  transform: translateY(-30px)
+                  max-width: 100%
+                  padding-right: 20px
+                  padding-left: 20px
+                  padding-bottom: 20px
+                  height: 810px
+                  &::before
+                        display: none
+            +r(1099)
+                  height: 730px
+            +r(999)
+                  height: 666px
+            +r(899)
+                  height: 600px
+            +r(799)
+                  height: 530px
+            +r(767)
+                  height: auto
+                  background-color: transparent
+                  transform: translate(0)
+                  padding: 0
+                  box-shadow: none
       &__after-wr
             max-width: 1200px
             margin: 0 auto
@@ -168,14 +239,32 @@
             bottom: 30px
             right: -29px
             z-index: 0
+            +r(1365)
+                  bottom: -4px
+                  right: 95px
+            +r(767)
+                  display: none
       &__wr
             // transform: translateY(-330px)
             align-items: flex-end
-            margin-bottom: 35px
+            justify-content: space-between
+            +r(767)
+                  flex-direction: column
+      &__block-wr
+            max-width: 49%
+            // position: relative
+            width: 100%
+            +r(767)
+                  max-width: 100%
+                  margin-bottom: 40px
+                  &:first-child
+                        margin-bottom: 65px
+                  &:last-child
+                        margin-bottom: 25px
       &__block
             position: relative
-            max-width: 49%
             width: 100%
+            margin-bottom: 35px
       &__img
       &__text-wr
             // transform: translateY(-330px)
@@ -191,6 +280,12 @@
                   position: absolute
                   bottom: -63px
                   right: -150px
+            +r(1365)
+                  margin-bottom: 80px
+                  &::after
+                        bottom: -43px
+                        width: 100%
+                        right: 0
       &__text
             max-width: 360px
             width: 100%
@@ -222,14 +317,27 @@
                         font-size: inherit
                         font-weight: 500
                         font-family: 'OpenSans-regular', sans-serif
+            +r(1365)
+                  h5
+                        font-size: 18px
+            +r(767)
+                  p
+                        font-size: 14px
+                        font-family: 'OpenSans-regular', sans-serif
+                        span
+                              font-size: 12px
+      &__button, &__text-wr, &__wr
+            transform: translateY(-300px)
+            +r(767)
+                  transform: translate(0)
       &__button
             flex-direction: column
             max-width: 600px
             margin-left: auto
             button
                   margin: 0 auto
-      &__button, &__text-wr, &__wr
-            transform: translateY(-300px)
+            +r(1365)
+                  max-width: 100%
       &__button-text
             margin-bottom: 55px
             h5
@@ -248,6 +356,25 @@
                   font-weight: 900
                   text-align: right
                   letter-spacing: 0.065em
+            +r(1365)
+                  max-width: 100%
+                  width: 100%
+                  text-align: center
+                  margin-bottom: 15px
+                  h5
+                        font-size: 18px
+                        margin-bottom: 8px
+                  p
+                        font-size: 14px
+                        text-align: center
+            +r(767)
+                  h5
+                        line-height: 1.5
+                        font-size: 16px
+                        margin-bottom: 12px
+                        span
+                              padding: 3px
+                  margin-bottom: 35px
       &__t-left, &__t-top
             font-size: 36px
             position: absolute
@@ -262,12 +389,30 @@
                   height: 2px
                   background-color: $gray
                   margin-left: 47px
+            +r(1365)
+                  font-size: 24px
+                  &::after
+                        margin-left: 5px
+            +r(767)
+                  font-size: 18px
       &__t-left
             transform: rotate(-90deg) translate(-86% , -35px)
             transform-origin: 0% 100%
+            +r(1365)
+                  transform: translateY(-40px)
+                  transform-origin: unset
+                  left: unset
+                  right: 5px
+            +r(767)
+                  transform: translateY(-30px)
       &__t-top
             left: unset
             right: 5px
             transform: translateY(-80px)
+            +r(1365)
+                  transform: translateY(-40px)
+            +r(767)
+                  transform: translateY(-30px)
+                  
 
 
