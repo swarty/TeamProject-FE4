@@ -278,6 +278,9 @@
          z-index: -1
       &:nth-child(1)
          display: block
+      &:nth-child(5), &:nth-child(4)
+            &::after
+                  height: 300px
       +r(1365)
          position: relative
          right: 0
@@ -287,6 +290,7 @@
             height: 400px
             width: 96%
             right: -18px
+
       +r(767)
          display: block
          position: relative

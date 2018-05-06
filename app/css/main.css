@@ -1071,6 +1071,8 @@ img {
       z-index: -1; }
     .s_course__skills:nth-child(1) {
       display: block; }
+    .s_course__skills:nth-child(5)::after, .s_course__skills:nth-child(4)::after {
+      height: 300px; }
     @media all and (max-width: 1365px) {
       .s_course__skills {
         position: relative;
