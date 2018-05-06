@@ -80,6 +80,7 @@ ul,ol
   h2
     position: relative
     display: inline-block
+    letter-spacing: 0.03em
     &::before
       content: ""
       position: relative
@@ -143,7 +144,33 @@ ul,ol
       height: 2px
     +r(767)
       display: none
-    
+  &__center
+    max-width: 768px
+    width: 100%
+    margin: 0 auto
+    h2
+      text-align: center
+      &::after
+        content: ""
+        position: absolute
+        width: 576px
+        height: 4px
+        background-color: $gray
+        left: 50%
+        transform: translatex(-50%)
+        bottom: -4px
+    +r(1365)
+      h2
+        &::after
+          height: 2px
+          width: 380px
+          bottom: -8px
+      max-width: 530px
+    +r(767)
+      h2
+        &::after
+          width: 160px
+          bottom: -12px
 
 
 
