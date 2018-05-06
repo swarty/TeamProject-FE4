@@ -384,7 +384,7 @@ img {
         .s_hero__start p {
           font-size: 16px; } }
   .s_hero__head {
-    max-width: 215px;
+    max-width: 237px;
     width: 100%;
     position: relative;
     justify-content: flex-end; }
@@ -396,6 +396,8 @@ img {
       .s_hero__head {
         max-width: 140px; } }
   .s_hero__trainig {
+    max-width: 237px;
+    width: 100%;
     color: #242427;
     background-color: #fff;
     font-size: 16px;
@@ -407,6 +409,7 @@ img {
       .s_hero__trainig {
         display: none; } }
   .s_hero__tel {
+    padding-left: 13px;
     margin-bottom: 12px; }
   .s_hero a {
     font-size: 20px;
@@ -422,13 +425,14 @@ img {
         font-size: 14px; } }
   .s_hero .in-entry {
     position: absolute;
+    left: 15px;
     top: 87px;
-    max-width: 260px;
-    width: 100%; }
+    width: 260px; }
     @media all and (max-width: 1365px) {
       .s_hero .in-entry {
         display: none; } }
   .s_hero__set {
+    padding-left: 13px;
     font-size: 16px;
     font-family: 'ProximaNova-regular';
     color: #bababa; }
