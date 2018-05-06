@@ -1,0 +1,170 @@
+@import "../base/variables"
+
+=desktop
+  @media (min-width: $tablet-width)
+    @content
+
+=tablet
+  @media (max-width: $tablet-width)
+    @content
+
+=mobile
+  @media (max-width: $mobile-width)
+    @content
+
+.ed-format-wrapper
+  padding: 95px 0
+  background: url("../../img/ed-format-background.png")
+  +mobile
+    background: url("../../img/full-bg.jpg")
+    padding: 25px 13px
+  .bg-block
+    display: block
+    position: absolute
+    height: 636px
+    background: url("../../img/full-bg.jpg")
+    box-shadow: 10px 10px 45px -5px rgba(0, 0, 0, 0.25)
+    +mobile
+      display: none
+    &-1
+      width: 31px
+      left: 70px
+      top: 50px
+    &-2
+      width: 60px
+      right: 70px
+      top: 120px
+  .ed-format
+    max-width: 1145px
+    width: 100%
+    margin: auto
+    display: flex
+    flex-direction: column
+    &__heading
+      text-align: center
+      span
+        color: $cyan
+
+    &__divider
+      width: 430px
+      height: 4px
+      background: $gray
+      margin: 75px auto
+      position: relative
+      font-size: 18px
+      font-family: 'MuseoSans-extrabold', sans-serif
+      &:before,
+      &:after
+        position: absolute
+        display: block
+        padding: 5px 0
+        letter-spacing: 1px
+        text-align: center
+      &:before
+        bottom: 100%
+        width: 100px
+        left: calc(50% + 10px)
+        background: $gray
+        color: $cyan
+
+        content: 'ОНЛАЙН'
+      &:after
+        top: 100%
+        right: 0
+        color: $gray
+
+        content: 'ОФФЛАЙН'
+      +mobile
+        width: 185px
+        height: 2px
+        font-size: 14px
+        margin: 20px auto 45px
+        &:before
+          left: 0
+          background: none
+        &:after
+          right: 0
+  .schedule
+    display: flex
+    justify-content: center
+    &__calendar
+      width: 520px
+      height: 655px
+      padding: 85px 135px 10px 10px
+      border-radius: 10px
+      background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url("../../img/full-main-bg.png") no-repeat 200px 250px, url("../../img/full-bg.jpg")
+      font-family: 'UbuntuMono-bold', sans-serif
+      box-shadow: 10px 20px 45px 0px rgba(0, 0, 0, 0.25)
+      transform: translateX(62px)
+      z-index: 1
+      +mobile
+        display: none
+      &--heading
+        font-size: 50px
+        color: #a9a9a9
+        text-align: right
+        letter-spacing: 1px
+        padding-right: 10px
+        margin-bottom: 25px
+        &:after
+          display: block
+          width: 80px
+          height: 2px
+          background: #a9a9a9
+          margin-top: 10px
+          margin-left: auto
+
+          content: ''
+      table
+        width: 100%
+        text-align: center
+        color: #00929c
+        text-shadow: 1px 1px 1px black
+        th
+          font-size: 26px
+          padding-bottom: 30px
+        td
+          font-family: 'MuseoSans-semibold', sans-serif;
+          padding: 20px 10px
+
+    &__week
+      width: 550px
+      height: 655px
+      background: $white
+      padding: 45px 45px 45px 0
+      box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.19)
+      transform: translateX(-62px) translateY(55px)
+      +mobile
+        transform: none
+        width: 100%
+        height: auto
+        padding: 25px 0
+      .day-time
+        display: flex
+        align-items: center
+        justify-content: space-between
+        .day
+          background: #cecece
+          font-family: 'Open Sans Extrabold', sans-serif
+          text-align: right
+          width: 325px
+          +mobile
+            width: 75%
+            font-size: 16px
+        .hours
+          width: 170px
+          text-align: right
+          border-bottom: 2px dotted $gray
+          font-family: 'UbuntuMono-regular', sans-serif
+          color: $cyan
+          font-size: 24px
+          +mobile
+            border: none
+            font-size: 20px
+            margin-right: 10px
+      .description
+        padding-left: 190px
+        margin: 10px 0
+        font-family: 'Open Sans Semibold', sans-serif
+        +mobile
+          padding: 5px
