@@ -248,19 +248,36 @@ img {
     left: -45px; }
 
 .s_area__wrap {
-  max-width: 100%;
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  background-color: red; }
+  max-width: 800px;
+  width: 100%;
+  padding-top: 150px; }
+
+.s_area_title {
+  max-width: 400px;
+  width: 50%;
+  margin-bottom: 45px;
+  padding-top: 35px; }
 
 .s_area__block {
-  max-width: 100%;
-  width: 100%; }
+  position: relative;
+  max-width: 400px;
+  width: 50%; }
 
 .s_area__text {
   max-width: 50%;
-  width: 50%; }
+  width: 50%;
+  margin-bottom: 45px; }
 
 .s_area__img-wr {
-  height: 76px; }
+  position: absolute;
+  height: 100%;
+  width: auto;
+  top: 0;
+  left: -50px; }
+
+.s_area__img-wr img {
+  max-height: 76px;
+  height: 100%;
+  width: auto; }
