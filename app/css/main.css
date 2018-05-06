@@ -1142,4 +1142,176 @@ img {
 .s_warranty {
   padding-top: 160px;
   padding-bottom: 85px;
-  background-image: url(../img/warranty-bg.jpg); }
+  background-image: url(../img/warranty-bg.jpg);
+  position: relative; }
+  .s_warranty__after {
+    max-width: 270px;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 10%; }
+  .s_warranty__block {
+    max-width: 50%;
+    width: 100%; }
+  .s_warranty__title {
+    margin-bottom: 40px; }
+    .s_warranty__title h2 {
+      max-width: 400px;
+      color: #fff; }
+  .s_warranty__divider {
+    background-color: #00bbd3;
+    height: 2px; }
+  .s_warranty__paragraph {
+    font-size: 18px;
+    font-family: serif;
+    font-family: 'MuseoSans-extrabold', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 65px;
+    line-height: 1.5em;
+    max-width: 540px;
+    letter-spacing: 0.05em; }
+    .s_warranty__paragraph span {
+      font-family: inherit;
+      color: #00bbd3;
+      text-transform: inherit; }
+  .s_warranty__sub-title {
+    padding: 0px 6px;
+    padding-bottom: 2px;
+    display: block;
+    color: #242427;
+    font-size: 24px;
+    background-color: #fff;
+    font-weight: 900;
+    font-family: "UbuntuMono-bold" , sans-serif;
+    margin-bottom: 38px; }
+  .s_warranty__line {
+    background-color: #a9a9aa;
+    height: 1px;
+    width: 800px;
+    position: relative;
+    left: 100%;
+    transform: translateX(-100%);
+    margin-bottom: 27px;
+    position: relative; }
+    .s_warranty__line::before {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translate(-45%, -40%);
+      content: url(../img/warranty-1.png); }
+  .s_warranty__p-list {
+    position: relative; }
+    .s_warranty__p-list p {
+      position: relative;
+      padding-right: 25px;
+      font-size: 16px;
+      color: #fff;
+      font-family: "OpenSans-light", sans-serif; }
+      .s_warranty__p-list p strong {
+        font-family: "OpenSans-bold", sans-serif; }
+      .s_warranty__p-list p::before {
+        position: absolute;
+        content: "";
+        width: 22px;
+        height: 22px;
+        background-color: #00bbd3;
+        box-sizing: border-box;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        top: -27px;
+        left: 0;
+        transform: translateY(-50%); }
+  .s_warranty__text {
+    color: #fff;
+    font-size: 18px;
+    font-family: "OpenSans-light", sans-serif;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    margin-bottom: 35px; }
+    .s_warranty__text strong {
+      font-family: "OpenSans-bold", sans-serif; }
+  .s_warranty__t-before, .s_warranty__t-after {
+    position: absolute; }
+    .s_warranty__t-before::after, .s_warranty__t-after::after {
+      transform: rotate(90deg);
+      color: #fff;
+      position: absolute;
+      font-weight: 100;
+      letter-spacing: 0.2em;
+      line-height: 0.8;
+      font-family: 'UbuntuMono-regular', sans-serif; }
+  .s_warranty__t-before {
+    top: 20%;
+    font-size: 40px;
+    left: -90px; }
+    .s_warranty__t-before::after {
+      content: "dream"; }
+  .s_warranty__t-after {
+    font-size: 26px;
+    top: 30%;
+    right: 60px; }
+    .s_warranty__t-after::after {
+      content: "guarantee"; }
+  .s_warranty__banner {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    background-color: #242427;
+    padding-top: 192px;
+    padding-left: 60px;
+    padding-right: 50px;
+    transform: translateY(-23%);
+    padding-bottom: 30px; }
+    .s_warranty__banner::before {
+      position: absolute;
+      content: "GOIT";
+      color: #242427;
+      line-height: 0.6;
+      font-family: 'UbuntuMono-bold', sans-serif;
+      font-size: 200px;
+      top: 0;
+      right: 0;
+      text-shadow: 0px 18px 11px rgba(0, 0, 0, 0.14); }
+    .s_warranty__banner ul {
+      counter-reset: list3;
+      transform: translateX(35px); }
+    .s_warranty__banner li {
+      position: relative;
+      background-color: #222223;
+      padding-top: 12px;
+      padding-bottom: 20px;
+      padding-left: 20px;
+      box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.14);
+      margin-bottom: 8px;
+      width: calc( 100% + 30px); }
+    .s_warranty__banner p {
+      color: #fff;
+      font-size: 18px;
+      font-family: "OpenSans-light", sans-serif; }
+    .s_warranty__banner h4 {
+      font-family: "UbuntuMono-regular" , sans-serif;
+      font-weight: 800;
+      color: #fff;
+      position: relative;
+      margin-top: 16px; }
+      .s_warranty__banner h4::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 1px;
+        background-color: #00bbd3;
+        width: 104px;
+        transform: translate(-50%, -12px); }
+      .s_warranty__banner h4::after {
+        position: absolute;
+        color: #00bbd3;
+        left: 0;
+        top: 0;
+        counter-increment: list3;
+        content: "." counter(list3);
+        font-family: "UbuntuMono-bold" , sans-serif;
+        font-size: 22px;
+        transform: translateX(-55px); }
