@@ -351,3 +351,23 @@
          padding-right: 20px
          background-color: #eee
    
+.s_list
+      margin-left: 40px
+      margin-top: 100px
+      margin-bottom: 100px
+      li
+            position: relative
+            padding-left: 40px
+            &::before
+                  position: absolute
+                  content: ""
+                  left: 0px
+                  width: 20px
+                  height: 20px
+                  background-color: $cyan
+                  top: 50%
+                  transform: translateY(-50%)
+                  border-radius: 50%
+                  border: 2px solid $white
+                  box-sizing: border-box
+                  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75)

@@ -1139,6 +1139,27 @@ img {
         padding-right: 20px;
         background-color: #eee; } }
 
+.s_list {
+  margin-left: 40px;
+  margin-top: 100px;
+  margin-bottom: 100px; }
+  .s_list li {
+    position: relative;
+    padding-left: 40px; }
+    .s_list li::before {
+      position: absolute;
+      content: "";
+      left: 0px;
+      width: 20px;
+      height: 20px;
+      background-color: #00bbd3;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      border: 2px solid #fff;
+      box-sizing: border-box;
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75); }
+
 .s_warranty {
   padding-top: 160px;
   padding-bottom: 85px;
