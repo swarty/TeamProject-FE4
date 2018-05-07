@@ -3,21 +3,54 @@
    padding-bottom: 85px
    background-image: url(../img/warranty-bg.jpg)
    position: relative
+   +r(1365)
+      padding-top: 95px
+      padding-bottom: 50px
+   +r(767)
+      padding-top: 45px
+      padding-bottom: 55px
    &__after
       max-width: 270px
       width: 100%
       position: absolute
       right: 0
       bottom: 10%
+      +r(999)
+            display: none
    &__content
+         +r(1365)
+            flex-direction: column
+            align-items: center            
    &__block
       max-width: 50%
       width: 100%
+      +r(1365)
+            max-width: 80%
+            margin: 0 auto
+            &:first-child
+                  margin-bottom: 40px
+      +r(767)
+            max-width: 100%
    &__title
       margin-bottom: 40px
+      +r(1365)
+            max-width: 550px
+            width: 100%
+            margin-bottom: 45px
+      +r(767)
+            text-align: center
+            margin-bottom: 20px
       h2
          max-width: 400px
          color: $white
+         +r(1365)
+            max-width: 100%
+            width: 100%
+            margin-bottom: 20px
+         +r(767)
+            max-width: 250px
+            &::after
+                  background-color: $cyan
    &__divider
       background-color: $cyan
       height: 2px
@@ -36,6 +69,15 @@
          font-family: inherit
          color: $cyan
          text-transform: inherit
+      +r(1365)
+            max-width: 430px
+            width: 100%
+            line-height: 1.73em
+            font-size: 14px
+      +r(767)
+            text-align: center
+            line-height: 1.2em
+            margin-bottom: 60px
    &__sub-title
       padding: 0px 6px
       padding-bottom: 2px
@@ -46,6 +88,11 @@
       font-weight: 900
       font-family: "UbuntuMono-bold" , sans-serif
       margin-bottom: 38px
+      +r(767)
+            background-color: transparent
+            font-size: 20px
+            color: $white
+            margin-bottom: 25px
    &__line
       background-color: #a9a9aa
       height: 1px
@@ -61,7 +108,12 @@
          top: 50%
          transform: translate(-45%, -40%)
          content: url(../img/warranty-1.png)
-      
+      +r(1365)
+            transform: translate(-10%)
+            left: 0
+            width: 100%
+      +r(767)
+            display: none
    &__p-list
       position: relative
       p
@@ -70,8 +122,12 @@
          font-size: 16px
          color: $white
          font-family: "OpenSans-light", sans-serif
+         +r(1365)
+            font-size: 14px
          strong
             font-family: "OpenSans-bold", sans-serif
+            +r(767)
+                  font-family: 'OpenSans-ExtraBold', sans-serif
          &::before
             position: absolute
             content: ""
@@ -84,6 +140,17 @@
             top: -27px
             left: 0
             transform: translateY(-50%)
+         +r(767)
+            margin-bottom: 20px
+            padding-left: 40px
+            font-family: 'OpenSans-regular', sans-serif
+            &:last-child
+                  margin-bottom: 10px
+            &::before
+                  transform: translateY(15%)
+                  top: 0%
+      +r(767)
+            flex-direction: column
    &__text
       color: $white
       font-size: 18px
@@ -93,6 +160,8 @@
       margin-bottom: 35px
       strong
          font-family: "OpenSans-bold", sans-serif
+      +r(1365)
+            font-size: 14px!important
    &__t-before, &__t-after
       position: absolute
       &::after
@@ -103,23 +172,33 @@
          letter-spacing: 0.2em
          line-height: 0.8
          font-family: 'UbuntuMono-regular', sans-serif
+      +r(767)
+            display: none
    &__t-before
       &::after
          content: "dream"
       top: 20%
       font-size: 40px
       left: -90px
+      +r(1365)
+            font-size: 30px
+            top: 0%
+            left: -75px
    &__t-after
       &::after
          content: "guarantee"
       font-size: 26px
       top: 30%
       right: 60px
+      +r(1365)
+            font-size: 20px
+            top: 15%
+            right: 44px
    &__banner
       position: absolute
       width: 50%
       height: auto
-      background-color: $gray
+      background-color: #313133
       padding-top: 192px
       padding-left: 60px
       padding-right: 50px
@@ -128,29 +207,55 @@
       &::before
          position: absolute
          content: "GOIT"
-         color: $gray
-         line-height: 0.6
+         color: #313133
+         line-height: 0.65
          font-family: 'UbuntuMono-bold', sans-serif
          font-size: 200px
          top: 0
          right: 0
          text-shadow: 0px 18px 11px rgba(0, 0, 0, 0.14)
+      +r(1365)
+            position: relative
+            max-width: 100%
+            width: 100%
+            padding-top: 145px
+            transform: translate(0)
+            padding-bottom: 40px
+            &::before
+                  font-size: 150px
+      +r(767)
+            padding: 35px 15px
+            &::before
+                  display: none
       ul
          counter-reset: list3
          transform: translateX(35px)
+         +r(767)
+            transform: translate(0)
+            padding-left: 30px
       li
          position: relative
-         background-color: #222223
+         background-color: #2f2f31
          padding-top: 12px
          padding-bottom: 20px
          padding-left: 20px
          box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.14)
          margin-bottom: 8px
          width: calc( 100% + 30px)
+         +r(1365)
+            padding-top: 20px
+         +r(767)
+            background-color: transparent
+            width: 100%
+            box-shadow: none
+            padding-left: 0
+
       p
          color: $white
          font-size: 18px
          font-family: "OpenSans-light", sans-serif
+         +r(1365)
+            font-size: 14px
       h4
          font-family: "UbuntuMono-regular" , sans-serif
          font-weight: 800
@@ -176,5 +281,14 @@
             font-family: "UbuntuMono-bold" , sans-serif
             font-size: 22px
             transform: translateX(-55px)
-
-   
+         +r(1365)
+            font-size: 18px
+            margin-bottom: 5px
+         +r(767)
+            font-size: 16px
+            margin-bottom: 10px
+            &::after
+                  transform: translateX(-35px)
+            &::before
+                  transform: translate(-32%, -12px)
+            

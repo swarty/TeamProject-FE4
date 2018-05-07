@@ -1144,20 +1144,63 @@ img {
   padding-bottom: 85px;
   background-image: url(../img/warranty-bg.jpg);
   position: relative; }
+  @media all and (max-width: 1365px) {
+    .s_warranty {
+      padding-top: 95px;
+      padding-bottom: 50px; } }
+  @media all and (max-width: 767px) {
+    .s_warranty {
+      padding-top: 45px;
+      padding-bottom: 55px; } }
   .s_warranty__after {
     max-width: 270px;
     width: 100%;
     position: absolute;
     right: 0;
     bottom: 10%; }
+    @media all and (max-width: 999px) {
+      .s_warranty__after {
+        display: none; } }
+  @media all and (max-width: 1365px) {
+    .s_warranty__content {
+      flex-direction: column;
+      align-items: center; } }
   .s_warranty__block {
     max-width: 50%;
     width: 100%; }
+    @media all and (max-width: 1365px) {
+      .s_warranty__block {
+        max-width: 80%;
+        margin: 0 auto; }
+        .s_warranty__block:first-child {
+          margin-bottom: 40px; } }
+    @media all and (max-width: 767px) {
+      .s_warranty__block {
+        max-width: 100%; } }
   .s_warranty__title {
     margin-bottom: 40px; }
+    @media all and (max-width: 1365px) {
+      .s_warranty__title {
+        max-width: 550px;
+        width: 100%;
+        margin-bottom: 45px; } }
+    @media all and (max-width: 767px) {
+      .s_warranty__title {
+        text-align: center;
+        margin-bottom: 20px; } }
     .s_warranty__title h2 {
       max-width: 400px;
       color: #fff; }
+      @media all and (max-width: 1365px) {
+        .s_warranty__title h2 {
+          max-width: 100%;
+          width: 100%;
+          margin-bottom: 20px; } }
+      @media all and (max-width: 767px) {
+        .s_warranty__title h2 {
+          max-width: 250px; }
+          .s_warranty__title h2::after {
+            background-color: #00bbd3; } }
   .s_warranty__divider {
     background-color: #00bbd3;
     height: 2px; }
@@ -1176,6 +1219,17 @@ img {
       font-family: inherit;
       color: #00bbd3;
       text-transform: inherit; }
+    @media all and (max-width: 1365px) {
+      .s_warranty__paragraph {
+        max-width: 430px;
+        width: 100%;
+        line-height: 1.73em;
+        font-size: 14px; } }
+    @media all and (max-width: 767px) {
+      .s_warranty__paragraph {
+        text-align: center;
+        line-height: 1.2em;
+        margin-bottom: 60px; } }
   .s_warranty__sub-title {
     padding: 0px 6px;
     padding-bottom: 2px;
@@ -1186,6 +1240,12 @@ img {
     font-weight: 900;
     font-family: "UbuntuMono-bold" , sans-serif;
     margin-bottom: 38px; }
+    @media all and (max-width: 767px) {
+      .s_warranty__sub-title {
+        background-color: transparent;
+        font-size: 20px;
+        color: #fff;
+        margin-bottom: 25px; } }
   .s_warranty__line {
     background-color: #a9a9aa;
     height: 1px;
@@ -1201,6 +1261,14 @@ img {
       top: 50%;
       transform: translate(-45%, -40%);
       content: url(../img/warranty-1.png); }
+    @media all and (max-width: 1365px) {
+      .s_warranty__line {
+        transform: translate(-10%);
+        left: 0;
+        width: 100%; } }
+    @media all and (max-width: 767px) {
+      .s_warranty__line {
+        display: none; } }
   .s_warranty__p-list {
     position: relative; }
     .s_warranty__p-list p {
@@ -1209,8 +1277,14 @@ img {
       font-size: 16px;
       color: #fff;
       font-family: "OpenSans-light", sans-serif; }
+      @media all and (max-width: 1365px) {
+        .s_warranty__p-list p {
+          font-size: 14px; } }
       .s_warranty__p-list p strong {
         font-family: "OpenSans-bold", sans-serif; }
+        @media all and (max-width: 767px) {
+          .s_warranty__p-list p strong {
+            font-family: 'OpenSans-ExtraBold', sans-serif; } }
       .s_warranty__p-list p::before {
         position: absolute;
         content: "";
@@ -1223,6 +1297,19 @@ img {
         top: -27px;
         left: 0;
         transform: translateY(-50%); }
+      @media all and (max-width: 767px) {
+        .s_warranty__p-list p {
+          margin-bottom: 20px;
+          padding-left: 40px;
+          font-family: 'OpenSans-regular', sans-serif; }
+          .s_warranty__p-list p:last-child {
+            margin-bottom: 10px; }
+          .s_warranty__p-list p::before {
+            transform: translateY(15%);
+            top: 0%; } }
+    @media all and (max-width: 767px) {
+      .s_warranty__p-list {
+        flex-direction: column; } }
   .s_warranty__text {
     color: #fff;
     font-size: 18px;
@@ -1232,6 +1319,9 @@ img {
     margin-bottom: 35px; }
     .s_warranty__text strong {
       font-family: "OpenSans-bold", sans-serif; }
+    @media all and (max-width: 1365px) {
+      .s_warranty__text {
+        font-size: 14px !important; } }
   .s_warranty__t-before, .s_warranty__t-after {
     position: absolute; }
     .s_warranty__t-before::after, .s_warranty__t-after::after {
@@ -1242,23 +1332,36 @@ img {
       letter-spacing: 0.2em;
       line-height: 0.8;
       font-family: 'UbuntuMono-regular', sans-serif; }
+    @media all and (max-width: 767px) {
+      .s_warranty__t-before, .s_warranty__t-after {
+        display: none; } }
   .s_warranty__t-before {
     top: 20%;
     font-size: 40px;
     left: -90px; }
     .s_warranty__t-before::after {
       content: "dream"; }
+    @media all and (max-width: 1365px) {
+      .s_warranty__t-before {
+        font-size: 30px;
+        top: 0%;
+        left: -75px; } }
   .s_warranty__t-after {
     font-size: 26px;
     top: 30%;
     right: 60px; }
     .s_warranty__t-after::after {
       content: "guarantee"; }
+    @media all and (max-width: 1365px) {
+      .s_warranty__t-after {
+        font-size: 20px;
+        top: 15%;
+        right: 44px; } }
   .s_warranty__banner {
     position: absolute;
     width: 50%;
     height: auto;
-    background-color: #242427;
+    background-color: #313133;
     padding-top: 192px;
     padding-left: 60px;
     padding-right: 50px;
@@ -1267,29 +1370,60 @@ img {
     .s_warranty__banner::before {
       position: absolute;
       content: "GOIT";
-      color: #242427;
-      line-height: 0.6;
+      color: #313133;
+      line-height: 0.65;
       font-family: 'UbuntuMono-bold', sans-serif;
       font-size: 200px;
       top: 0;
       right: 0;
       text-shadow: 0px 18px 11px rgba(0, 0, 0, 0.14); }
+    @media all and (max-width: 1365px) {
+      .s_warranty__banner {
+        position: relative;
+        max-width: 100%;
+        width: 100%;
+        padding-top: 145px;
+        transform: translate(0);
+        padding-bottom: 40px; }
+        .s_warranty__banner::before {
+          font-size: 150px; } }
+    @media all and (max-width: 767px) {
+      .s_warranty__banner {
+        padding: 35px 15px; }
+        .s_warranty__banner::before {
+          display: none; } }
     .s_warranty__banner ul {
       counter-reset: list3;
       transform: translateX(35px); }
+      @media all and (max-width: 767px) {
+        .s_warranty__banner ul {
+          transform: translate(0);
+          padding-left: 30px; } }
     .s_warranty__banner li {
       position: relative;
-      background-color: #222223;
+      background-color: #2f2f31;
       padding-top: 12px;
       padding-bottom: 20px;
       padding-left: 20px;
       box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.14);
       margin-bottom: 8px;
       width: calc( 100% + 30px); }
+      @media all and (max-width: 1365px) {
+        .s_warranty__banner li {
+          padding-top: 20px; } }
+      @media all and (max-width: 767px) {
+        .s_warranty__banner li {
+          background-color: transparent;
+          width: 100%;
+          box-shadow: none;
+          padding-left: 0; } }
     .s_warranty__banner p {
       color: #fff;
       font-size: 18px;
       font-family: "OpenSans-light", sans-serif; }
+      @media all and (max-width: 1365px) {
+        .s_warranty__banner p {
+          font-size: 14px; } }
     .s_warranty__banner h4 {
       font-family: "UbuntuMono-regular" , sans-serif;
       font-weight: 800;
@@ -1315,3 +1449,15 @@ img {
         font-family: "UbuntuMono-bold" , sans-serif;
         font-size: 22px;
         transform: translateX(-55px); }
+      @media all and (max-width: 1365px) {
+        .s_warranty__banner h4 {
+          font-size: 18px;
+          margin-bottom: 5px; } }
+      @media all and (max-width: 767px) {
+        .s_warranty__banner h4 {
+          font-size: 16px;
+          margin-bottom: 10px; }
+          .s_warranty__banner h4::after {
+            transform: translateX(-35px); }
+          .s_warranty__banner h4::before {
+            transform: translate(-32%, -12px); } }
