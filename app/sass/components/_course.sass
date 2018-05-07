@@ -3,6 +3,10 @@
    padding-bottom: 15px
    position: relative
    z-index: 0
+   +r(1599)
+      padding-bottom: 140px
+   +r(1365)
+      padding-bottom: 15px
    +r(767)
       padding-top: 40px
       padding-bottom: 30px
@@ -274,6 +278,9 @@
          z-index: -1
       &:nth-child(1)
          display: block
+      &:nth-child(5), &:nth-child(4)
+            &::after
+                  height: 300px
       +r(1365)
          position: relative
          right: 0
@@ -283,6 +290,7 @@
             height: 400px
             width: 96%
             right: -18px
+
       +r(767)
          display: block
          position: relative
@@ -318,6 +326,7 @@
       position: relative
       background-color: #fff
       z-index: 1
+      min-height: 560px
       li
          position: relative
          margin-bottom: 20px
@@ -336,11 +345,9 @@
          padding-top: 40px
          padding-bottom: 50px 
          background-color: #fbfbfb
+         min-height: unset
       +r(767)
          padding-left: 60px
          padding-right: 20px
          background-color: #eee
    
-.s_lala
-   padding: 100px
-   background-color: red
