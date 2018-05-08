@@ -1,12 +1,12 @@
 @import "base/general"
 
-@media screen and (max-width: 320px) 
+@media screen and (min-width: 320px) and (max-width: 568px)
 	.ss_left
 		display: none;
 	.ss_right
 		display: none;
 	.ss_wrapper
-		padding-top: 135px;
+		padding-top: 70px;
 		padding-left: 0
 		padding-right: 0
 	.ss_box
@@ -14,16 +14,38 @@
 		padding-right: 15px
 		width: 100%;
 		flex-direction: column
+		justify-content: space-between;
+		align-items: center;
 	.ss_main_left
-		height: 257px;
+		height: 260px
 		width: 100%;
 		padding: 0
 		padding-top: 15px;
+		margin-top: 50px;
+		margin-bottom: 70px;
 	.ss_main_left
 		img
 			width: 100%;
 	.ss_main_left:after
 		display: none
+	.ss_main_right_title_hidden
+		display: block;
+		border-bottom: 4px solid white;
+		padding-bottom: 23px;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 25px;
+
+	.ss_main_right_title_hidden
+		h2
+			font-size: 25px;
+	.ss_main_right_title_hidden
+		h2
+			span
+				color: #00bcd4;
+				font-size: 25px;
+	.ss_main_right_title
+		display: none;
 	.ss_main_right_title
 		h2
 			font-size: 25px;
@@ -34,6 +56,7 @@
 		top: 50px
 		left: 40px
 	.ss_main_right
+		width: 100%;
 		padding-top: 0
 		padding-left: 0
 	.ss_main_right_description
@@ -48,10 +71,11 @@
 			font-size: 14px;
 	.ss_main_right
 		#button
+			display: block;
 			width: 290px;
 			height: 56px;
-			margin-left: 0;
-			margin-right: 0;
+			margin-left: auto;
+			margin-right: auto;
 			margin-bottom: 80px;
 			margin-top: 60px;
 	.ss_skill
@@ -59,18 +83,65 @@
 	.ss_time_skill
 		font-size: 12px;
 	#ss_career_skills
-		top: -290px
+		top: -285px
 		left: 160px
 	#ss_agile_skills
 		color: white
-		top: -245px
-		left: 50px
+		top: -160px
+		left: -120px
 	#ss_english_skills
-		top: -235px
-		left: 175px
+		top: -185px
+		left: 90px
 	.hidden
 		display: block;
 		margin-top: 35px
-			
-		
-    
+
+@media screen and (min-width: 360px) and (max-width: 568px)
+	#ss_career_skills
+		top: -330px
+		left: 185px
+	#ss_english_skills
+		top: -200px
+		left: 120px
+	#ss_agile_skills
+		top: -175px
+		left: -100px
+@media screen and (min-width: 375px) and (max-width: 568px)
+	#ss_career_skills
+		top: -340px
+		left: 190px
+	#ss_english_skills
+		top: -210px
+		left: 130px
+@media screen and (min-width: 414px) and (max-width: 568px)
+	#ss_career_skills
+		top: -375px
+		left: 215px
+	#ss_english_skills
+		top: -230px
+		left: 160px
+	#ss_agile_skills
+		top: -200px
+		left: -90px
+@media screen and (min-width: 411px) and (max-width: 568px)
+	#ss_career_skills
+		top: -375px
+		left: 210px
+	#ss_english_skills
+		top: -230px
+		left: 150px
+	#ss_agile_skills
+		top: -200px
+		left: -90px
+@media screen and (min-width: 567px) and (max-width: 568px)
+	#ss_career_skills
+		top: -500px
+		left: 300px
+	#ss_english_skills
+		top: -320px
+		left: 250px
+	#ss_agile_skills
+		top: -270px
+		left: -50px
+	.ss_main_left
+		height: 450px
