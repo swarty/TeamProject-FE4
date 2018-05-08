@@ -1,21 +1,19 @@
 .gray
 	max-width: 1920px
 	width: 100%
-	height: 820px	
+	max-height: 860px
+	height: 100%	
 	position: absolute
 	background-image: url("../../img/full-bg.jpg")
 	z-index: -1
-.turquoise
-	max-width: 23px
-	width: 100%
-	height: 798px
-	position: absolute
-	background-color: #00bcd4
-.after
-	top: 465px
-.befor
-	top: 82px
-	left: calc(100% - 23px)
+	+r(1365)
+		max-height: 1290px
+	+r(940)
+		max-height: 1150px
+	+r(768)
+		max-height: 1130px
+	+r(640)
+		max-height: 1483px
 .oblique
 	max-width: 1920px
 	width: 100%
@@ -24,15 +22,47 @@
 	transform: rotate(9deg)
 	position: absolute
 	top: 668px
-	left: -15px	
+	left: -35px	
 	z-index: -1
+	+r(1365)
+		top: 1168px
+	+r(940)
+		transform: rotate(15deg)
+		top: 1008px
+		left: -80px	
+	+r(640)
+		display: none
+.oblique2
+	border-right: 150px solid #fff;	
+	border-bottom: 150px solid transparent;
+	position: absolute	
+	top: 0
+	left: calc(100% - 95px)
+	z-index: 0
+	+r(940)
+		left: calc(100% - 95px)
+	+r(768)
+		left: calc(100% - 97px)
+	+r(640)
+		display: none
+.turquoise
+	max-width: 23px
+	width: 100%
+	height: 798px
+	position: absolute
+	background-color: #00bcd4
+	+r(1365)
+		display: none
+.after
+	top: 465px
+.befor
+	top: 82px
+	left: calc(100% - 23px)
 
 .s_goit 
 	max-width: 1920px
 	width: 100%
 	position: relative
-	
-
 	
 	&__title
 		max-width: 1200px
@@ -40,6 +70,12 @@
 		margin: 0 auto
 		padding-top: 160px
 		font-family: "MuseoSans-extrabold"
+		+r(940)
+			max-width: 690px		
+			padding-top: 85px
+		+r(640)
+			max-width: 290px		
+			padding-top: 60px
 		h2
 			max-width: 694px
 			width: 100%
@@ -49,47 +85,102 @@
 			vertical-align: middle		
 			span
 				color: #00bcd4
+			+r(940)	
+				margin-bottom: 40px			
+				font-size: 29px
+			+r(640)
+				margin-bottom: 15px
+				font-size: 25px
+		.line
+			display: none
+			+r(640)
+				display: block
+				width: 150px
+				margin: 0 auto
+				border: 2px solid #242427
+				margin-bottom: 15px
+
 		div
 			max-width: 431px
 			width: 100%
 			margin: 0 auto
 			margin-bottom: 52px
 			font-size: 18px	
-			text-transform: uppercase				
+			text-transform: uppercase
+			+r(940)
+				max-width: 323px
+				margin-bottom: 57px
+			+r(640)
+				margin-bottom: 42px
+						
 	&__3-years
 		max-width: 431px
 		width: 100%		
 		border-bottom: 4px solid  #242427
 		font-family: "MuseoSans-extrabold"
 		text-align: right
-	&__specialists
-		max-width: 168px
-		width: 100%
+		+r(940)
+			max-width: 323px
+			font-size: 14px	
+		+r(640)
+			border: none
+			text-align: center
+	&__specialists		
 		margin-left: 263px
 		padding-right: 2px
 		font-family: "MuseoSans-extrabold"
 		color: #00bcd4
 		text-align: right
 		background-color: #242427
+		+r(940)
+			font-size: 14px	
+			margin-left: 180px
+			padding: 6px
+			text-align: center
+		+r(640)
+			margin-left: 0
+			background: none
+			padding: 0
 	&__wrapper
 		max-width: 1147px
 		width: 100%
 		margin: 0 auto
-		margin-bottom: 50px		
+		margin-bottom: 50px	
+		+r(1365)
+			flex-direction: column
+			align-items: center
+			margin-bottom: 70px	
+		+r(1249)
+			max-width: 690px
 	&__left
 		width: 41%
 		position: relative
 		padding-right: 30px
+		+r(1249)
+			max-width: 690px
+			width: 100%
+		+r(940)
+			max-width: 380px
+		+r(640)
+			padding-right: 0
 	&__bend
 		position: absolute
 		top: 38px
 		left: -96px
+		img
+			+r(640)
+				display: none
 	&__vline
 		position: relative
 		top: -77px
 		left: -52px
 		height: 390px
 		border-right: 1px solid #242427
+		+r(940)
+			height: 340px
+		+r(640)
+			display: none
+
 	&__gblock
 		width: 63px
 		position: relative
@@ -97,14 +188,30 @@
 		left: 22px
 		margin-bottom: 58px
 		align-items: center
+		+r(940)
+			top: -276px
+			margin-bottom: 45px
+		+r(640)
+			left: 100px
+			top: 150px
+			margin-bottom: 88px
+	.gblock2
+		+r(640)
+			margin-bottom: 66px
+	.gblock3
+		+r(640)
+			margin-bottom: 66px
 	&__gline
 		width: 45px 
 		border-top: 1px solid #242427
+		+r(640)
+			display: none
 	&__disk
 		width: 18px
 		height: 18px
 		background-color: #00bcd4
 		border-radius: 50%
+
 	&__intention
 		max-width: 365px
 		width: 100%
@@ -112,23 +219,61 @@
 		font-family: "MuseoSans-extrabold"
 		font-size: 20px
 		text-transform: uppercase
+		+r(940)
+			max-width: 300px
+			font-size: 16px
+		+r(640)
+			max-width: 290px
 	&__university
 		margin-bottom: 45px
 		font-family: "OpenSans-Semibold"
 		font-size: 18px	
+		+r(940)
+			max-width: 373px
+			font-size: 16px
 	ul 
+		+r(940)
+			max-width: 345px
+		+r(640)			
+			margin: 0 auto
+			margin-bottom: 35px
+			max-width: 230px
 		li
+			position: relative
 			margin-bottom: 24px
 			font-family: "OpenSans-regular"
 			font-size: 18px
+			+r(940)
+				max-width: 345px
+				font-size: 14px
+			br
+				+r(940)
+					display: none
 			span
 				font-family: "OpenSans-ExtraBold"
+			.line
+				display: none
+				+r(768)
+					display: block
+					position: absolute
+					width: 287px
+					left: 51px
+					top: 21px
+				+r(640)
+					display: none
 
 	&__right
 		width: 59%
 		padding-right: 50px
 		padding-top: 28px
 		justify-content: space-around
+		+r(1249)
+			max-width: 690px
+			width: 100%
+		+r(940)
+			padding-top: 6px
+		+r(640)
+			display: none
 
 	&__first
 		max-width: 184px
@@ -186,7 +331,7 @@
 	&__company
 		width: 346px
 		// width: 100%
-		padding-top: 15px
+		padding-top: 6px
 		padding-left: 62px
 		position: absolute
 		top: 317px
@@ -198,12 +343,89 @@
 			// width: 100%
 			font-family: "UbuntuMono-bold"
 			font-size: 22px
+	&__right1
+		display: none
+		+r(640)
+			display: block
+			max-width: 290px
+			width: 100%
+	.company1
+		width: 290px
+		position: relative
+		transform: none
+		top: 0
+		left: 0
+		margin-bottom: 38px
+		padding-left: 0
+		font-size: 18px
+
+	&__first1
+		+r(640)
+			max-width: 290px
+			width: 100%
+		div
+			+r(640)
+				width: 144px
+				height: 144px
+				padding: 8px
+				align-items: center	
+				box-shadow: none			
+				background-color: #fff
+	&__terrasoft1
+		margin: 0 7px 7px 0
+
+	&__next1
+		+r(640)
+			max-width: 290px
+			width: 100%
+		div
+			+r(640)
+				width: 144px
+				height: 144px
+				padding: 8px
+				align-items: center
+				box-shadow: none				
+				background-color: #fff
+	&__infopuls1
+		margin: 0 7px 7px 0
+
+	&__end1
+		+r(640)
+			max-width: 290px
+			width: 100%			
+		div
+			+r(640)
+				width: 144px
+				height: 144px
+				padding: 8px
+				align-items: center	
+				box-shadow: none			
+				background-color: #fff
+	&__luxoft1
+		margin: 0 7px 7px 0
+	.ready1
+		padding-top: 20px
+
 	&__footer
 		max-width: 1147px
 		width: 100%
 		margin: 0 auto
 		margin-bottom: 266px
 		position: relative
+		+r(1249)			
+			max-width: 570px
+			width: 100%
+		+r(640)
+			margin-bottom: 58px	
+		.line
+			display: none
+			+r(640)
+				display: block
+				width: 150px
+				margin: 0 auto
+				border: 2px solid #242427
+				margin-bottom: 15px
+
 	&__achievements
 		max-width: 375px
 		widtht: 100%
@@ -212,16 +434,36 @@
 		top: -100px
 		padding-top: 14px
 		border-top: 4px solid #242427
+		.ap
+			+r(640)
+				text-align: center
+		+r(1365)
+			position: relative
+			top: 0
+			margin-bottom: 68px
+		+r(640)
+			margin: 0 auto
+			margin-bottom: 20px
+			font-size: 16px
+			max-width: 230px
+			border: none
+			
 		p
 			font-family: "MuseoSans-extrabold"
 			font-size: 20px
 			text-transform: uppercase
 			text-align: justify
-	&__organization
-		position: absolute
+	&__organization		
 		max-width: 1147px
-		width: 100%
-		z-index: 1
+		width: 100%	
+		+r(1249)
+			max-width: 570px
+			width: 100%
+			margin: 0 auto
+			flex-direction: column
+			align-item: center
+
+		
 	&__head
 		position: relative
 		padding-top: 30px
@@ -234,6 +476,13 @@
 		left: -16px
 		background-color: #242427
 		padding: 0 11px 0 9px
+		+r(640)
+			position: relative
+			transform: none
+			top: 0
+			left: 0
+			margin-bottom: 20px
+
 		p
 			font-family: "UbuntuMono-bold"
 			font-size: 18px
@@ -246,49 +495,145 @@
 	&__body
 		padding-left: 29px
 		margin-bottom: 25px
+		+r(640)
+			padding: 0
+			margin-bottom: 100px
 	&__logo
 		position: absolute
 		top: 0
 		left: 0
-		height: 387px
+		height: 100%		
 		z-index: -1
+		+r(640)
+			max-width: 290px
+			width: 100%
+			height: auto
+			padding-top: 20px		
+	.l1920
+		+r(640)
+			display: none
+	.l320
+		display: none
+		+r(640)
+			display: block
+
+
+	.background
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: #fbfbfb
+		z-index: -1
+	
 	&__oon
 		width: 50%
 		position: relative
-		margin-right: 28px
+		margin-right: 28px		
 		box-shadow: 0px 20px 22px -8px rgba(138,134,138,0.58)
+		+r(1249)
+			max-width: 570px
+			width: 100%
+			margin: 0
+			margin-bottom: 30px
+		+r(640)
+			max-width: 290px		
+			margin: 0 auto
+			margin-bottom: 18px
+			padding-left: 18px
 		.oon			
 			width: 100%
 			padding-right: 65px
 			padding-left: 206px
 			margin-bottom: 133px
+			+r(640)
+				padding-right: 0
+				padding-left: 0
+				margin-bottom: 20px
 	&__dolor
-		margin-right: 195px
-		
-		
+		margin-right: 215px
+		margin-bottom: 52px
+		span
+			display: none
+			+r(940)
+				display: inline
+		+r(1249)
+			margin-right: 220px
+		+r(768)
+			font-size: 14px
+		+r(640)
+			width: 100%
+			margin: 0
+	&__ae
+		width: 50%
+		+r(1249)
+			max-width: 570px
+			width: 100%
+		+r(640)
+			max-width: 290px
+			margin: 0 auto
+			flex-direction: column			
+			width: 100%
 	&__awards
-		width: 25%
+		width: 50%
 		position: relative
 		margin-right: 28px	
 		box-shadow: 0px 20px 22px -8px rgba(138,134,138,0.58)	
+		+r(640)				
+			max-width: 290px
+			width: 100%
+			margin-right: 0	
+			margin-bottom: 18px
+			padding-left: 18px
 		.awards
 			width: 100%			
 			padding-left: 107px
 			margin-bottom: 133px
+			+r(640)
+				padding-right: 0
+				padding-left: 0
+				margin-bottom: 120px
 	&__sit
 		margin-right: 92px
+		margin-bottom: 52px
+		+r(768)
+			font-size: 14px
+			margin-right: 106px
+		+r(640)
+			max-width: 140px
+			width: 100%
+			padding-left: 15px
+			margin-bottom: 0
 		
 	&__education
-		width: 25%
+		width: 50%
 		position: relative
 		box-shadow: 0px 20px 22px -8px rgba(138,134,138,0.58)		
+		+r(640)				
+			max-width: 290px
+			width: 100%
+			padding-left: 18px
 		.education
 			width: 100%	
 			padding-right: 35px		
 			padding-left: 107px
 			margin-bottom: 107px
+			+r(640)
+				padding-right: 0
+				padding-left: 0
+				margin-bottom: 120px
 	&__cup		
 		margin-right: 105px
+		margin-bottom: 52px
+		+r(768)
+			margin-right: 110px
+			font-size: 14px
+		+r(640)
+			max-width: 140px
+			width: 100%
+			padding-left: 15px
+			margin-bottom: 0
 	.laer1
 		max-width: 94px
 		width: 100%
