@@ -1,1 +1,418 @@
-.s_fullStack
+.s_full
+      position: relative
+      +r(767)
+          background-image: url(../img/full-bg.jpg);
+          padding-bottom: 60px
+      &__c-left
+            position: absolute
+            left: 80px
+            top: 80%
+            z-index: 3
+            transform: rotate(90deg) translateX(-50%)
+            transform-origin: 3%
+            span
+                  font-weight: 600
+                  font-size: 16px
+                  margin-right: 40px
+                  font-family: "UbuntuMono-regular", sans-serif
+            +r(1365)
+                  display: none
+      &__c-right
+            position: absolute
+            right: 80px
+            top: 132px
+            z-index: 3
+            transform: rotate(90deg) translateX(100%)
+            transform-origin: 100%
+            span
+                  font-weight: 600
+                  font-size: 16px
+                  margin-right: 40px
+                  font-family: "UbuntuMono-regular", sans-serif
+            span:first-child
+                  text-transform: uppercase
+                  color: $cyan
+            +r(1365)
+                  display: none
+      .container 
+            z-index: 2
+            +r(1365)
+                  padding: 0 26px
+            +r(767)
+                  padding: 0 16px
+      &__bg
+            position: absolute
+            max-height: 558px
+            max-width: 1000000px
+            width: 100%
+            height: 100%
+            background-image: url(../img/full-bg.jpg)
+            bottom: 0
+            left: 0
+            transform: skewy(-15deg) translateY(-150px)
+            z-index: 2
+            +r(1365)
+                  transform: skewy(-15deg) translateY(-70px)
+            +r(767)
+                  display: none
+      &__bg-main
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            background-image: url(../img/full-bg.jpg)
+            overflow: hidden
+            max-height: 1000px
+            z-index: 0
+            +r(999)
+                  max-height: 760px
+      &__wrapper
+            max-height: 1450px
+            +r(767)
+                  max-height: 100%
+      &__head-wr
+            position: relative
+            transform: translate(-90px, -79px)
+            +r(1365)
+                  transform: translate(0, -56px)
+            +r(767)
+                  transform: translate(0)
+      &__header
+            background-color: #f8f8f8
+            max-width: 946px
+            width: 100%
+            box-shadow: -14.326px 46.859px 58px 0px rgba(0, 0, 0, 0.15)
+            padding-top: 80px
+            padding-bottom: 490px
+            padding-left: 95px
+            padding-right: 95px
+            position: relative
+            z-index: 1
+            +r(1365)
+                  max-width: 100%
+                  padding: 77px 20px
+            +r(767)
+                  background-color: transparent
+                  box-shadow: none
+                  padding: 50px 0
+            // &::before
+            //       content: ""
+            //       position: absolute
+            //       left: -45px
+            //       top: -25px
+            //       width: 320px
+            //       height: 830px
+            //       background-image: url(../img/full-before.jpg)
+            //       background-repeat: repeat
+            //       background-position: center
+            //       z-index: 0
+      &__before
+            position: absolute
+            top: 0
+            left: 0
+            width: 320px
+            height: 830px
+            display: block
+            background-image: url(../img/full-before.jpg)
+            background-repeat: repeat
+            background-position: center
+            transform: translate(-45px, -25px)
+            +r(1365)
+                  display: none
+      &__title
+            max-width: 540px
+            width: 100%
+            position: relative
+            &::before
+                  position: relative
+                  display: block
+                  top: 0
+                  left: 0
+                  transform: translatex(-50%)
+                  content: ""
+                  background-color: $cyan
+                  height: 2px
+                  width: 100%
+                  margin-bottom: 17px
+            +r(1365)
+                  margin-bottom: 160px
+                  max-width: 390px
+            +r(767)
+                  margin-bottom: 30px
+                  &::before
+                        display: none
+      &__vert
+            position: absolute
+            top: 0
+            right: -40px
+            transform: rotate(90deg) translatey(-200px)
+            transform-origin: 5% 40%
+            p
+                  text-transform: uppercase
+                  font-size: 14px
+                  font-weight: bold
+                  max-width: 200px
+                  width: 100%
+                  font-family: "OpenSans-Extrabold", sans-serif
+                  font-weight: 800
+            span
+                  font-family: inherit
+                  text-transform: uppercase
+                  font-size: inherit
+                  color: $cyan
+                  font-weight: inherit
+            +r(1365)
+                  right: 67px
+                  top: 20px
+                  p
+                        font-size: 12px
+            +r(767)
+                  position: relative
+                  transform: rotate(0deg) translate(0)
+                  top: 0
+                  right: 0
+                  left: 0
+                  text-align: center
+                  border: 2px solid $cyan
+                  padding: 5px 0
+                  margin-bottom: 25px
+                  p
+                        margin: 0 auto
+                        text-transform: unset
+                  span
+                        text-transform: unset
+      &__main
+            transform: translateY(-315px)
+            max-width: 1076px
+            height: 827px
+            width: 100%
+            box-shadow: -14.326px 46.859px 58px 0px rgba(0, 0, 0, 0.15)
+            background-color: #fff
+            margin-left: auto
+            padding-right: 93px
+            padding-left: 28px
+            padding-bottom: 55px
+            position: relative
+            &::before
+                  position: absolute
+                  left: 0
+                  bottom: 0
+                  width: 500px
+                  height: 316px
+                  content: url(../img/full-main-bg.png)
+                  display: block
+                  overflow: hidden
+            +r(1365)
+                  transform: translateY(-30px)
+                  max-width: 100%
+                  padding-right: 20px
+                  padding-left: 20px
+                  padding-bottom: 20px
+                  height: 810px
+                  &::before
+                        display: none
+            +r(1099)
+                  height: 730px
+            +r(999)
+                  height: 666px
+            +r(899)
+                  height: 600px
+            +r(799)
+                  height: 530px
+            +r(767)
+                  height: auto
+                  background-color: transparent
+                  transform: translate(0)
+                  padding: 0
+                  box-shadow: none
+      &__after-wr
+            max-width: 1200px
+            margin: 0 auto
+            position: relative
+      &__after
+            max-width: 1076px
+            width: 100%
+            height: 450px
+            background-image: url(../img/full-before.jpg)
+            position: absolute
+            bottom: 30px
+            right: -29px
+            z-index: 0
+            +r(1365)
+                  bottom: -4px
+                  right: 95px
+            +r(767)
+                  display: none
+      &__wr
+            // transform: translateY(-330px)
+            align-items: flex-end
+            justify-content: space-between
+            +r(767)
+                  flex-direction: column
+      &__block-wr
+            max-width: 49%
+            // position: relative
+            width: 100%
+            +r(767)
+                  max-width: 100%
+                  margin-bottom: 40px
+                  &:first-child
+                        margin-bottom: 65px
+                  &:last-child
+                        margin-bottom: 25px
+      &__block
+            position: relative
+            width: 100%
+            margin-bottom: 35px
+      &__img
+      &__text-wr
+            // transform: translateY(-330px)
+            max-width: 100%
+            width: 100%
+            margin-bottom: 100px
+            position: relative
+            &::after
+                  content: ""
+                  background-color: $gray
+                  height: 3px
+                  width: 95%
+                  position: absolute
+                  bottom: -63px
+                  right: -150px
+            +r(1365)
+                  margin-bottom: 80px
+                  &::after
+                        bottom: -43px
+                        width: 100%
+                        right: 0
+      &__text
+            max-width: 360px
+            width: 100%
+            margin: 0 auto
+            h5
+                  text-align: center
+                  font-size: 24px
+                  font-family: "MuseoSans-extrabold", sans-serif
+                  font-weight: 900
+                  text-align: center
+                  margin-bottom: 27px
+                  text-transform: uppercase
+                  position: relative
+                  &::after
+                        content: ""
+                        position: absolute
+                        width: 110px
+                        height: 3px
+                        background-color: $cyan
+                        left: 50%
+                        bottom: -12px
+                        transform: translateX(-50%)
+            p
+                  text-align: center
+                  font-size: 14px
+                  font-weight: bold
+                  font-family:  'OpenSans-Extrabold', sans-serif
+                  span
+                        font-size: inherit
+                        font-weight: 500
+                        font-family: 'OpenSans-regular', sans-serif
+            +r(1365)
+                  h5
+                        font-size: 18px
+            +r(767)
+                  p
+                        font-size: 14px
+                        font-family: 'OpenSans-regular', sans-serif
+                        span
+                              font-size: 12px
+      &__button, &__text-wr, &__wr
+            transform: translateY(-300px)
+            +r(767)
+                  transform: translate(0)
+      &__button
+            flex-direction: column
+            max-width: 600px
+            margin-left: auto
+            button
+                  margin: 0 auto
+            +r(1365)
+                  max-width: 100%
+      &__button-text
+            margin-bottom: 55px
+            h5
+                  text-transform: uppercase
+                  font-size: 22px
+                  font-family: 'UbuntuMono-bold', sans-serif
+                  font-weight: 900
+                  margin-bottom: 5px
+                  span
+                        color: $gray
+                        background-color: $cyan
+                        padding: 5px 9px
+            p
+                  font-size: 18px
+                  font-family: 'UbuntuMono-bold', sans-serif
+                  font-weight: 900
+                  text-align: right
+                  letter-spacing: 0.065em
+            +r(1365)
+                  max-width: 100%
+                  width: 100%
+                  text-align: center
+                  margin-bottom: 15px
+                  h5
+                        font-size: 18px
+                        margin-bottom: 8px
+                  p
+                        font-size: 14px
+                        text-align: center
+            +r(767)
+                  h5
+                        line-height: 1.5
+                        font-size: 16px
+                        margin-bottom: 12px
+                        span
+                              padding: 3px
+                  margin-bottom: 35px
+      &__t-left, &__t-top
+            font-size: 36px
+            position: absolute
+            top: 0
+            left: 0
+            font-family: "UbuntuMono-bold" , sans-serif
+            &::after
+                  content: ""
+                  position: relative
+                  display: inline-block
+                  width: 135px
+                  height: 2px
+                  background-color: $gray
+                  margin-left: 47px
+            +r(1365)
+                  font-size: 24px
+                  &::after
+                        margin-left: 5px
+            +r(767)
+                  font-size: 18px
+      &__t-left
+            transform: rotate(-90deg) translate(-86% , -35px)
+            transform-origin: 0% 100%
+            +r(1365)
+                  transform: translateY(-40px)
+                  transform-origin: unset
+                  left: unset
+                  right: 5px
+            +r(767)
+                  transform: translateY(-30px)
+      &__t-top
+            left: unset
+            right: 5px
+            transform: translateY(-80px)
+            +r(1365)
+                  transform: translateY(-40px)
+            +r(767)
+                  transform: translateY(-30px)
+                  
+
+

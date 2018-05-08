@@ -27,6 +27,7 @@ gulp.task('serve', ['sass', 'pug'], function() {
   gulp.watch("app/js/*.js", ['babel', 'sass']);
   gulp.watch('app/sass/**/*.sass', ['sass']);
   gulp.watch('app/pug/**/*.pug', ['pug']);
+  gulp.watch('app/css/**/*.css');
   gulp.watch("app/*.html").on('change', browserSync.reload);
 });
 
@@ -40,14 +41,14 @@ gulp.task('pug', function() {
 })
 
 gulp.task('babel', function(){
-    return gulp.src('app/js/*')
-      // .pipe(plumber())
-      .pipe(wait(1500))
+    return gulp.src('app/js/*.js')
       .pipe(babel({
-          presets: ['es2015']
+        // presets: ['es2015']
       }))
       .pipe(gulp.dest('dist/js'))
 });
+
+
 
 
 // // Compile sass into CSS & auto-inject into browsers
