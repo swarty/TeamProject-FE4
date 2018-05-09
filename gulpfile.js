@@ -24,9 +24,10 @@ gulp.task('serve', ['sass', 'pug'], function() {
     server: 'app'
   });
 
-  gulp.watch("app/js/*.js", ['babel']);
+  gulp.watch("app/js/*.js", ['babel', 'sass']);
   gulp.watch('app/sass/**/*.sass', ['sass']);
   gulp.watch('app/pug/**/*.pug', ['pug']);
+  gulp.watch('app/css/**/*.css');
   gulp.watch("app/*.html").on('change', browserSync.reload);
 });
 
@@ -40,24 +41,36 @@ gulp.task('pug', function() {
 })
 
 gulp.task('babel', function(){
-    return gulp.src('app/js/*')
-      // .pipe(plumber())
-      .pipe(wait(1500))
+    return gulp.src('app/js/*.js')
       .pipe(babel({
-          presets: ['es2015']
+        // presets: ['es2015']
       }))
       .pipe(gulp.dest('dist/js'))
 });
 
 
-// Compile sass into CSS & auto-inject into browsers
-gulp.task('sass', function() {
-    return gulp.src("app/sass/**/*.sass")
-      // .pipe(plumber())
+
+
+// // Compile sass into CSS & auto-inject into browsers
+// gulp.task('sass', function() {
+//     return gulp.src("app/sass/**/*.sass")
+//       // .pipe(plumber())
+//       .pipe(wait(1500))
+//       .pipe(sass({outputStyle: 'compressed'}))
+//       .pipe(autoprefixer({browsers: ['last 2 version', '> 2%', 'firefox 15', 'safari 5', 'ie 6', 'ie 7', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4']}))
+//       .pipe(gulp.dest("app/css"))
+//       .pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
+// });
+
+
+
+gulp.task('sass', function(){ // Создаем таск Sass
+  return gulp.src('app/sass/**/*.sass') // Берем источник
       .pipe(wait(1500))
-      .pipe(sass({outputStyle: 'compressed'}))
-      .pipe(autoprefixer({browsers: ['last 2 version', '> 2%', 'firefox 15', 'safari 5', 'ie 6', 'ie 7', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4']}))
-      .pipe(gulp.dest("app/css"))
+      .pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
+      // .pipe(sass({outputStyle: 'compressed'}))
+      .pipe(autoprefixer(['> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
+      .pipe(gulp.dest('app/css')) // Выгружаем результата в папку app/css
       .pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
 });
 

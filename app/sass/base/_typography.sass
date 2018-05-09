@@ -1,50 +1,76 @@
 @import "helpers"
    
-+font-face('Heuristica-italic', '../../fonts/heuristica-italic')
-+font-face('Heuristica-regular', '../../fonts/heuristica-regular')
-+font-face('Lato-bold', '../../fonts/Lato-Bold')
-+font-face('Lato-regular', '../../fonts/Lato-Regular')
-+font-face('OpenSans-ExtraBold', '../../fonts/OpenSans-ExtraBold')
-+font-face('OpenSans-Regular', '../../fonts/OpenSans-Regular')
-+font-face('UbuntuMono-regular', '../../fonts/UbuntuMono-Regular', '300')
-+font-face('UbuntuMono-bold', '../../fonts/UbuntuMono-Bold', '600')
++font-face('OpenSans-light', '../fonts/OpenSans-Light', '300')
++font-face('OpenSans-regular', '../fonts/OpenSans-Regular', '400')
++font-face('OpenSans-bold', '../fonts/OpenSans-bold', '600')
++font-face('OpenSans-Semibold', '../fonts/OpenSans-SemiBold', '700')
++font-face('OpenSans-ExtraBold', '../fonts/OpenSans-ExtraBold', '800')
 
-=hi
-   font-family: "Heuristica-italic", sans-serif
++font-face('UbuntuMono-regular', '../fonts/UbuntuMono-Regular', '300')
++font-face('UbuntuMono-bold', '../fonts/UbuntuMono-Bold', '600')
 
-=hr
-   font-family: "Heuristica-regular", sans-serif
 
-=lb
-   font-family: "Lato-bold", sans-serif
++font-face('MuseoSans-medium', '../fonts/MuseoSansCyrl-500', '500')
++font-face('MuseoSans-semibold', '../fonts/museo-sans-semibold', '700')
++font-face('MuseoSans-extrabold', '../fonts/MuseoSansCyrl-900', '900')
+   
 
-=lr
-   font-family: "Lato-regular", sans-serif
++font-face('ProximaNova-regular', '../fonts/ProximaNova-Bold', '400')
++font-face('ProximaNova-bold', '../fonts/ProximaNova-Regular', '600')
 
-=oe
-   font-family: "OpenSans-ExtraBold", sans-serif
 
-=or
-   font-family: "OpenSans-Regular", sans-serif
 
 h1,h2,h3,h4,h5,h6,p,span
    margin: 0
+   padding: 0
+
+h1,h2,h4
+   font-family: "MuseoSans-extrabold", sans-serif
+   font-weight: 500
+   text-transform: uppercase
 
 h1
-   color: $white
-   +oe
-   font-size: 60px
+   font-size: 64px
+   line-height: 1.17
+   +r(1365)
+      font-size: 40px
+   +r(767)
+      font-size: 30px
 
 h2
-   color: $white
-   +oe
-   font-size: 38px
+   font-size: 42px
+   line-height: 1.2
+   margin-bottom: 26px
+   +r(1365)
+      font-size: 30px
+   +r(767)
+      font-size: 25px
 
 h3
-   color: $white
-   +lb
-   font-size: 24px
+   font-family: "UbuntuMono-bold" , sans-serif
+   font-weight: 600
+   font-size: 30px
+   line-height: 1.33
+   +r(1365)
+      font-size: 24px
+   +r(767)
+      font-size: 18px
 
-p
-   +hr
+h4
    font-size: 22px
+   line-height: 1.27
+   +r(1365)
+      font-size: 16px
+   +r(767)
+      font-size: 18px
+
+p, li
+   font-weight: 400
+   font-family: "OpenSans-regular", sans-serif
+   font-size: 18px
+   line-height: 1.45
+   +r(1356)
+      font-size: 14px
+
+h5
+   font-family: "ProximaNova-regular", sans-serif
