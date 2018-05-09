@@ -20,18 +20,22 @@
 			top: 0
 			max-width: 690px
 			left: calc(50% - 345px)
+		+r(1365)
+			max-width: 1200px
 		+r(319)
 			display: none	
 		.tops
 			top: -50px
 			left: calc(70% + 30px)
 			z-index: -1
-			+r(767)
+			+r(1365)
 				display: none
 		.bs
 			left: calc(25% - 10px)
 			top: 500px
 			z-index: -4
+			+r(1365)
+				left: calc(10% - 10px)
 			+r(767)
 				max-width: 630px
 				width: 100%
@@ -75,6 +79,8 @@
 		background-repeat: repeat
 		background-position: center
 		z-index: -2
+		+r(1365)
+			left: calc(50% - 320px)
 		+r(767)
 			max_width: 767px
 			top: 45px
@@ -160,14 +166,13 @@
 		span
 			background-color: #242427
 			padding: 5px 10px 2px 5px
-			+r(319)
-			max-width: 270px
-			background: none			
+			+r(319)				
+				background: none			
 
 
 	&__specialty		
 		background-color: #fff
-	&__bll
+	.bll
 		display: none
 		+r(319)
 			display: block
