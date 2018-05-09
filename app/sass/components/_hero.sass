@@ -1,0 +1,504 @@
+
+.line 
+	width: 120px
+	border: 1px solid #00bcd4
+.bold-line
+	max-width: 580px
+	width: 100%
+	background-color: #00bcd4
+	border: 4px solid #00bcd4
+	margin-bottom: 25px
+	margin-left: 16px
+	+r(1365)
+		max-width: 880px
+		margin: 0 auto
+		margin-bottom: 37px
+	+r(768)
+		max-width: 575px
+	+r(320)
+		max-width: 150px
+.s_hero	
+	max-width: 1920px
+	width: 100%	
+	position: relative
+	background-color: #2a2a2f	
+	justify-content: flex-start	
+	+r(1600)
+		padding-left: 100px
+		padding-right: 241px
+	+r(1365)
+		padding: 0
+	&__img1
+		position: absolute		
+		left: 0		
+		+r(900)
+			top: 270px
+		+r(620)
+			display: none
+	&__title
+		position: absolute
+		top: 0
+		left: 0
+		padding-left: 80px					
+		max-width: 1920px
+		width: 100%
+		padding-right: calc(21% - 10px)
+		z-index: 2
+		
+		+r(1365)
+			position: relative
+			left: 0
+			margin: 0 auto
+			max-width: 1140px
+			width: 100%
+			padding-top: 30px
+			padding-right: 0
+			padding-left: 0	
+		+r(1239)
+			max-width: 880px
+		+r(900)
+			max-width: 800px
+		+r(830)
+			max-width: 750px
+		+r(768)
+			max-width: 690px
+		+r(700)
+			max-width: 520px
+		+r(320)
+			max-width: 290px			
+	&__left-logo
+		justify-content: flex-start		
+		padding-top: 30px
+		+r(1365)			
+			padding-top: 0
+	&__logo
+		padding-top: 7px
+		+r(768)
+			padding-top: 2px
+			max-width: 80px
+			width: 100%
+		img 
+			+r(768)		
+			width: 80px			
+	&__name		
+		margin-left: 20px
+		color: $white
+		+r(768)
+			margin-left: 10px
+		+r(370)
+			display: none
+	&__text
+		width: 165px		
+		text-transform: uppercase
+		font-family: 'MuseoSans-extrabold'
+		font-size: 15px		
+		+r(768)
+			width: 120px
+			font-size: 11px
+	&__help
+		padding-top: 15px
+		font-size: 14px
+		+r(1365)
+			display: none
+	&__start
+		position: absolute
+		top: 105px
+		left: 49%		
+		transform: rotate(90deg)
+		+r(1600)
+			left: 44%
+		+r(1520)
+			left: 43%	
+		+r(1365)
+			position: relative
+			top: 0
+			left: 0			
+			transform: none
+			border: 1px solid #00bcd4
+			padding: 0 10px 8px 10px
+		+r(768)
+			padding: 8px 10px 8px 10px
+
+		+r(540)
+			position: absolute
+			left: 50%
+			margin-left: -71px
+			top: 94px
+		.in-start
+			width: 240px
+			+r(1365)
+				display: none
+		p 
+			max-width: 250px
+			width: 100%
+			font-size: 22px
+			font-family: 'MuseoSans-extrabold'
+			text-align: right
+			color: $white
+			+r(1365)
+				text-align: center
+			span
+				color: #00bcd4	
+				font-size: 18px
+			+r(768)
+				font-size: 16px
+	&__head
+		max-width: 215px
+		width: 100%
+		position: relative
+		justify-content: flex-end		
+		+r(1365)
+			margin-right: 0			
+			width: 100%
+		+r(768)
+			max-width: 140px
+	
+	&__entry
+
+	&__trainig
+		color:  #242427
+		background-color: $white
+		font-size: 16px
+		font-weight: bold
+		text-transform: uppercase
+		padding: 10px 15px 10px 15px
+		margin-bottom: 20px
+		+r(1365)
+			display: none
+	&__tel
+		margin-bottom: 12px	
+	a
+		font-size: 20px
+		font-weight: bold
+		color: #00bcd4
+		font-family: 'UbuntuMono-bold'
+		padding-bottom: 4px		
+		+r(1365)
+			border-bottom: 2px solid #00bcd4	
+		+r(768)
+			font-size: 14px	
+	.in-entry
+		position: absolute
+		top: 87px
+		max-width: 260px
+		width: 100%
+		+r(1365)
+			display: none
+	&__set
+		font-size: 16px
+		font-family: 'ProximaNova-regular'
+		color: #bababa
+		+r(768)
+			font-size: 13px
+		span
+			color: $white
+			font-weight: bold
+
+	&__time	
+		position: absolute
+		top: 460px
+		left: -243px		
+		max-width: 650px
+		width: 100%
+		justify-content: flex-start
+		align-items: center
+		transform: rotate(90deg)
+		z-index: 2
+		+r(1239)
+			display: none
+		p
+			margin-left: 10px
+			color: $white
+			font-size: 18px
+			span
+				color: #00bcd4
+				font-size: 23px
+	&__wrapper
+		max-width: 1140px
+		width: 100%
+		height: 100%		
+		+r(1600)
+			display: flex
+			justify-content: space-between
+		+r(1465)
+			max-width: 1060px	
+		+r(1365)
+			max-width: 1140px
+			margin: 0 auto
+			flex-direction: column
+		+r(768)
+			max-width: 690px
+			margin: 0 auto
+		+r(320)	
+			max-width: 290px		
+	&__left
+		position: relative
+		max-width: 590px
+		width: 100%		
+		padding-top: 282px
+		color: $white
+		margin-right: 1px
+
+		+r(1365)
+			max-width: 1140px
+			width: 100%	
+			padding-top: 100px
+		+r(768)
+			max-width: 505px
+			margin: auto
+	&__after-training
+		max-width: 480px
+		width: 100%
+		display: flex
+		flex-direction: column
+		justify-content: flex-end
+		align-items: flex-end
+		// margin-right: 110px
+		margin-bottom: 30px
+		+r(1365)
+			margin: 0 auto
+			justify-content: center
+			align-items: center
+			margin-bottom: 27px
+	&__work
+		max-width: 390px
+		width: 100%
+		font-size: 26px
+		text-transform: uppercase
+		font-family: 'UbuntuMono-bold'
+		text-align: right
+		+r(1365)
+			text-align: center
+		+r(768)
+			font-size: 20px	
+		+r(320)
+			font-size: 18px		
+	&__after
+		max-width: 300px
+		width: 100%			
+		font-size: 24px
+		font-family: 'ProximaNova-regular'
+		text-align: right
+		color: #bababa
+		+r(1365)
+			text-align: center
+		+r(768)
+			font-size: 16px
+			text-align: center
+	h1
+		max-width: 480px
+		width: 100%		
+		margin-bottom: 80px
+		text-align: right
+		font-family: 'MuseoSans-extrabold'
+		+r(1650)			
+			margin-bottom: 36px
+		+r(1365)			
+			margin: 0 auto
+			margin-bottom: 30px
+			max-width: 880px
+			text-align: center
+		+r(768)
+			max-width: 570px
+			font-size: 40px
+		+r(320)
+			max-width: 270px
+			font-size: 30px
+		span
+			color: #00bcd4
+	.stack 
+		position: absolute
+		top: 85%
+		margin-top: 4px
+		left: -138px
+		+r(1650)
+			position: static
+			margin-bottom: 37px
+		+r(1365)
+			position: relative
+			top: 0
+			left: 0
+			margin: 0 auto
+			margin-bottom: 37px
+	&__graduates
+		margin-bottom: 61px
+		+r(1365)
+			margin: 0 auto
+			max-width: 525px
+			width: 100%		
+		+r(320)
+			max-width: 270px
+			margin-bottom: 61px
+		p
+			max-width: 525px
+			width: 100%
+			font-size: 16px
+			font-family: 'MuseoSans-medium'
+			font-weight: 300
+			text-align: justify
+			+r(320)
+				margin: auto
+				max-width: 230px
+				font-size: 14px
+				text-align: center
+			span
+				font-weight: 900
+		.company
+			font-weight: bold
+			margin-bottom: 89px
+			text-align: justify	
+			+r(320)
+				margin: auto
+				text-align: center		
+			span
+				font-size: 24px
+				font-family: 'UbuntuMono-bold'
+				color: #00bcd4				
+				+r(320)					
+					font-size: 18px
+	&__right
+		position: relative
+		max-width: 550px
+		width: 100%
+		padding-top: 392px
+		padding-left: 66px
+		// background-color: #242427		
+		color: $white
+		z-index: 1		
+		+r(1365)
+			max-width: 1140px
+			width: 100%
+			margin: 0 auto
+			padding-left: 0
+			padding-top: 0
+		+r(768)
+			max-width: 505px
+		+r(620)
+			display: none
+	&__project
+		+r(1365)
+			display: flex
+			justify-content: space-between
+			max-width: 630px
+			width: 100%
+			margin: 0 auto
+			margin-bottom: 70px
+		h4
+			max-width: 170px
+			width: 100%
+			margin-bottom: 14px
+			// font-family: 'MuseoSans-medium'
+			// font-wight: 1200
+			+r(1365)
+				border-right: 2px solid #bababa
+				padding-right: 30px
+				max-width: 200px
+			+r(768)
+				font-size: 16px	
+				line-height: 1.65			
+		.line
+			width: 240px
+			border: 1px solid #bababa
+			margin-bottom: 35px
+			+r(1365)
+				display: none
+		ul 
+			+r(1365)
+				display: flex
+				justify-content: space-around
+		p
+			display: none
+			+r(1365)
+				display: block
+				height: 22px
+				line-height: 1
+				font-size: 22px
+				color: #00bcd4
+				font-weight: bold
+				padding-left: 50px
+			+r(768)
+				padding-left: 29px
+				font-size: 20px
+
+		li
+			font-size: 18px
+			width: 170px
+			margin-bottom: 30px
+			font-family: 'UbuntuMono-regular'
+			+r(1365)
+				margin-bottom: 0
+				padding-left: 2px
+				width: 180px
+			+r(768)
+				font-size: 16px				
+				width: 160px
+				font-weight: 550
+			&::before
+				content: "<_"
+				position: absolute			
+				left: 42px
+				font-size: 22px
+				color: #00bcd4
+				font-weight: bold	
+				+r(1365)
+					display: none
+	&__box
+		position: absolute
+		max-width: 550px
+		width: 100%
+		top: 0
+		left: 0
+		background-color: #242427
+		padding: 42px 0 39px 63px
+		z-index: -1
+		// box-shadow: 3px 2px 27px 7px rgba(159,158,163,1)
+		+r(1465)
+			padding-top: 845px
+		+r(1365)
+			display: none
+	&__img2
+		position: relative
+		max-width: 402px
+		width: 100%
+		height: auto
+		margin-bottom: 47px
+		top: 0
+		left: 294px			
+		// +r(1650)
+		// 	left: 234px	
+		// +r(1600)
+		// 	left: 195px
+		+r(1465)
+			display: none
+		img
+			width: 402px
+	&__button
+		max-width: 295px
+		width: 100%
+		position: relative
+
+		+r(1365)
+			display: none
+		div
+			width: 40px
+			height: 40px
+			position: absolute
+			
+		button
+			padding: 17px 25px 17px 25px
+			font-size: 16px
+			font-weight: bold
+			text-transform: uppercase
+			background-color: #00bcd4
+			border: none
+		.left
+			left: -13px
+			top: 20px
+			border-left: 1px solid $white
+			border-bottom: 1px solid $white
+		.right			
+			left: 230px
+			top: -10px
+			border-top: 1px solid $white
+			border-right: 1px solid $white
+
