@@ -2034,6 +2034,9 @@ img {
   @media all and (max-width: 767px) {
     .s_afterTraining {
       padding-top: 70px; } }
+  @media all and (max-width: 320px) {
+    .s_afterTraining {
+      padding-top: 60px; } }
   .s_afterTraining__background {
     max-width: 1455px;
     width: 100%;
@@ -2048,6 +2051,9 @@ img {
         top: 0;
         max-width: 690px;
         left: calc(50% - 345px); } }
+    @media all and (max-width: 319px) {
+      .s_afterTraining__background {
+        display: none; } }
     .s_afterTraining__background .tops {
       top: -50px;
       left: calc(70% + 30px);
@@ -2056,7 +2062,7 @@ img {
         .s_afterTraining__background .tops {
           display: none; } }
     .s_afterTraining__background .bs {
-      left: calc(15% - 10px);
+      left: calc(25% - 10px);
       top: 500px;
       z-index: -4; }
       @media all and (max-width: 767px) {
@@ -2095,8 +2101,7 @@ img {
   .s_afterTraining__gray {
     max-width: 840px;
     width: 100%;
-    max-height: 1020px;
-    height: 100%;
+    padding-top: 1020px;
     position: absolute;
     top: 140px;
     left: calc(100%	- 1110px);
@@ -2109,6 +2114,11 @@ img {
         max_width: 767px;
         top: 45px;
         left: 0; } }
+    @media all and (max-width: 319px) {
+      .s_afterTraining__gray {
+        max_width: 319px;
+        top: 0;
+        padding-top: 2100px; } }
   .s_afterTraining__wrapper {
     max-width: 858px;
     width: 100%;
@@ -2123,6 +2133,13 @@ img {
         max-width: 570px;
         grid-template-rows: 160px repeat(3, 1fr);
         grid-template-columns: repeat(2, 1fr); } }
+    @media all and (max-width: 319px) {
+      .s_afterTraining__wrapper {
+        max-width: 270px;
+        margin-bottom: 60px;
+        grid-gap: 30px;
+        grid-template-rows: 160px repeat(6, 1fr);
+        grid-template-columns: 1fr; } }
   .s_afterTraining__tittle {
     margin-bottom: 25px;
     grid-column-start: 1;
@@ -2130,6 +2147,9 @@ img {
     @media all and (max-width: 767px) {
       .s_afterTraining__tittle {
         margin-bottom: 0; } }
+    @media all and (max-width: 320px) {
+      .s_afterTraining__tittle {
+        grid-column-end: 1; } }
     @media all and (max-width: 767px) {
       .s_afterTraining__tittle h2 {
         max-width: 470px;
@@ -2138,6 +2158,11 @@ img {
         margin-bottom: 30px;
         font-size: 30px;
         text-align: center; } }
+    @media all and (max-width: 319px) {
+      .s_afterTraining__tittle h2 {
+        max-width: 270px;
+        font-size: 25px;
+        margin-bottom: 10px; } }
     .s_afterTraining__tittle span {
       color: #00bcd4; }
   .s_afterTraining__sal {
@@ -2148,6 +2173,9 @@ img {
         width: 100%;
         margin: 0 auto;
         padding-left: 0; } }
+    @media all and (max-width: 319px) {
+      .s_afterTraining__sal {
+        max-width: 270px; } }
     .s_afterTraining__sal p {
       font-family: "MuseoSans-extrabold";
       font-size: 18px;
@@ -2155,20 +2183,41 @@ img {
       @media all and (max-width: 767px) {
         .s_afterTraining__sal p {
           font-size: 16px; } }
+      @media all and (max-width: 319px) {
+        .s_afterTraining__sal p {
+          font-size: 14px;
+          text-align: center; } }
   .s_afterTraining__salary {
     max-width: 430px;
     width: 100%;
     text-align: right;
     border-bottom: 4px solid #242427; }
+    @media all and (max-width: 319px) {
+      .s_afterTraining__salary {
+        max-width: 270px;
+        border: none; } }
   .s_afterTraining__number {
     max-width: 430px;
     width: 100%;
     text-align: right; }
+    @media all and (max-width: 319px) {
+      .s_afterTraining__number {
+        max-width: 270px; } }
     .s_afterTraining__number span {
       background-color: #242427;
-      padding: 5px 10px 2px 5px; }
+      padding: 5px 10px 2px 5px;
+      max-width: 270px;
+      background: none; }
   .s_afterTraining__specialty {
     background-color: #fff; }
+  .s_afterTraining__bll {
+    display: none; }
+    @media all and (max-width: 319px) {
+      .s_afterTraining__bll {
+        display: block; } }
+  @media all and (max-width: 319px) {
+    .s_afterTraining .none {
+      display: none; } }
   .s_afterTraining__logo {
     max-width: 60px;
     width: 30%;
@@ -2265,8 +2314,10 @@ img {
     max-width: 320px;
     width: 100%;
     margin: 0 auto;
-    margin-bottom: 40px;
-    margin-bottom: 60px; }
+    margin-bottom: 40px; }
+    @media all and (max-width: 767px) {
+      .s_afterTraining__button {
+        margin-bottom: 60px; } }
     @media all and (max-width: 767px) {
       .s_afterTraining__button button {
         max-width: 250px;
@@ -2352,6 +2403,16 @@ img {
   top: 82px;
   left: calc(100% - 23px); }
 
+.in-title {
+  display: none; }
+  @media all and (max-width: 640px) {
+    .in-title {
+      display: block;
+      width: 150px;
+      margin: 0 auto;
+      border: 2px solid #242427;
+      margin-bottom: 15px; } }
+
 .s_goit {
   max-width: 1920px;
   width: 100%;
@@ -2387,16 +2448,7 @@ img {
         .s_goit__title h2 {
           margin-bottom: 15px;
           font-size: 25px; } }
-    .s_goit__title .line {
-      display: none; }
-      @media all and (max-width: 640px) {
-        .s_goit__title .line {
-          display: block;
-          width: 150px;
-          margin: 0 auto;
-          border: 2px solid #242427;
-          margin-bottom: 15px; } }
-    .s_goit__title div {
+    .s_goit__title .sp {
       max-width: 431px;
       width: 100%;
       margin: 0 auto;
@@ -2404,11 +2456,11 @@ img {
       font-size: 18px;
       text-transform: uppercase; }
       @media all and (max-width: 940px) {
-        .s_goit__title div {
+        .s_goit__title .sp {
           max-width: 323px;
           margin-bottom: 57px; } }
       @media all and (max-width: 640px) {
-        .s_goit__title div {
+        .s_goit__title .sp {
           margin-bottom: 42px; } }
   .s_goit__3-years {
     max-width: 431px;

@@ -5,6 +5,8 @@
 	padding-top: 200px
 	+r(767)
 		padding-top: 70px
+	+r(320)
+		padding-top: 60px
 	&__background
 		max-width: 1455px
 		width: 100%
@@ -17,7 +19,9 @@
 		+r(767)
 			top: 0
 			max-width: 690px
-			left: calc(50% - 345px)	
+			left: calc(50% - 345px)
+		+r(319)
+			display: none	
 		.tops
 			top: -50px
 			left: calc(70% + 30px)
@@ -25,7 +29,7 @@
 			+r(767)
 				display: none
 		.bs
-			left: calc(15% - 10px)
+			left: calc(25% - 10px)
 			top: 500px
 			z-index: -4
 			+r(767)
@@ -63,8 +67,7 @@
 	&__gray		
 		max-width: 840px
 		width: 100%
-		max-height: 1020px
-		height: 100%
+		padding-top: 1020px		
 		position: absolute	
 		top: 140px
 		left: calc(100%	- 1110px)
@@ -76,7 +79,10 @@
 			max_width: 767px
 			top: 45px
 			left: 0
-
+		+r(319)
+			max_width: 319px
+			top: 0
+			padding-top: 2100px	
 	&__wrapper
 		max-width: 858px
 		width: 100%
@@ -89,7 +95,13 @@
 		+r(767)
 			max-width: 570px
 			grid-template-rows: 160px repeat(3, 1fr)
-			grid-template-columns: repeat(2, 1fr)		
+			grid-template-columns: repeat(2, 1fr)
+		+r(319)
+			max-width: 270px
+			margin-bottom: 60px
+			grid-gap: 30px
+			grid-template-rows: 160px repeat(6, 1fr)
+			grid-template-columns: 1fr		
 				
 	&__tittle		
 		margin-bottom: 25px
@@ -97,6 +109,8 @@
 		grid-column-end: 3
 		+r(767)
 			margin-bottom: 0
+		+r(320)
+			grid-column-end: 1
 		h2
 			+r(767)
 				max-width: 470px
@@ -105,6 +119,10 @@
 				margin-bottom: 30px
 				font-size: 30px
 				text-align: center
+			+r(319)
+				max-width: 270px
+				font-size: 25px
+				margin-bottom: 10px
 		span
 			color: #00bcd4
 	&__sal
@@ -114,28 +132,48 @@
 			width: 100%
 			margin: 0 auto			
 			padding-left: 0
+		+r(319)
+			max-width: 270px
 		p
 			font-family: "MuseoSans-extrabold"
 			font-size: 18px
 			text-transform: uppercase
 			+r(767)
 				font-size: 16px
+			+r(319)
+				font-size: 14px
+				text-align: center
 	&__salary
 		max-width: 430px
 		width: 100%
 		text-align: right
 		border-bottom: 4px solid #242427
+		+r(319)
+			max-width: 270px
+			border: none
 	&__number
 		max-width: 430px
 		width: 100%
 		text-align: right
+		+r(319)
+			max-width: 270px
 		span
 			background-color: #242427
 			padding: 5px 10px 2px 5px
+			+r(319)
+			max-width: 270px
+			background: none			
 
 
 	&__specialty		
 		background-color: #fff
+	&__bll
+		display: none
+		+r(319)
+			display: block
+	.none
+		+r(319)
+			display: none
 	&__logo
 		max-width: 60px	
 		width: 30%	
@@ -234,7 +272,7 @@
 		margin: 0 auto
 		margin-bottom: 40px
 		+r(767)
-		margin-bottom: 60px
+			margin-bottom: 60px
 		button
 			+r(767)
 				max-width: 250px
