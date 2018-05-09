@@ -107,3 +107,160 @@
             margin-right: 10% 
         .b-title__text p
             font-size: 20px    
+
+//next section s_course
+.s_course 
+    &__wrap
+        display: flex
+        flex-wrap: wrap
+        position: relative
+        max-width: 1100px
+        width: 100%
+        font-size: 18px
+        background-image: url("../img/bg_img_course_wrap.png")
+        z-index: 100
+        padding-left: 100px
+        box-shadow: 9px 24px 64px 0px rgba(0,0,0,0.11)
+    &_title
+        max-width: 1000px
+        width: 80%
+        margin-top: 142px
+    &__line
+        width: 115px
+        height: 3px
+        background-color: #00b9d0
+        margin-bottom: 35px
+        margin-top: 10px
+    &__careerService
+        position: relative
+        width: 80%
+        margin-left: 100px
+        margin-bottom: 92px
+    &__careerService h3
+        margin-top: 40px
+    &__careerService p:last-child
+        margin-bottom: 55px
+    &__frame 
+        position: absolute
+        max-height: 270px
+        height: 100%
+        width: 3px
+        background-color: #000
+    &__frame_1
+        margin-left: -5%
+    &__frame_1::before
+        content: ""
+        position: absolute
+        height: 3px
+        width: 60px
+        background-color: #000
+    &__frame_1::after
+        content: ""
+        position: absolute
+        top: 235px
+        height: 3px
+        width: 525px
+        background-color: #000
+    &__frame_2
+        margin-left: 103%
+    &__frame_2::before
+        content: ""
+        position: absolute
+        left: -525px
+        height: 3px
+        width: 525px
+        background-color: #000      
+    &__frame_2::after
+        content: ""
+        position: absolute
+        top: 235px
+        right: 0px
+        height: 3px
+        width: 60px
+        background-color: #000
+    &__box
+        margin-top: 30px
+    &__study-text li
+        position: relative
+        padding-left: 30px
+        padding-bottom: 20px
+    &__study-text li::before
+        content: ""
+        position: absolute
+        top: 5px
+        left: 0px
+        width: 15px
+        height: 15px
+        background-color: #000
+        border-radius: 50%
+    &__bg-img
+        position: relative
+        display: flex
+    &__square
+        position: absolute
+        bottom: -35px
+        left: -35px
+        height: 480px
+        width: 480px
+        background-color: #00b9d0
+        z-index: 10
+    &__rectangle
+        position: absolute
+        bottom: 735px
+        right: 0
+        height: 465px
+        width: 70px
+        background-color: #00b9d0
+        box-shadow: -9px 39px 70px 2px rgba(0,0,0,0.11)
+    &__bg_img
+        position: absolute
+        bottom: 235px
+        left: -12%
+        max-height: 600px
+        height: auto
+        width: auto 
+        z-index: 20
+@media (max-width: 1365px)
+    .s_course
+        &__careerService
+            margin-left: 5%
+        &__rectangle
+            display: none
+        &__bg_img
+            display: none
+        &__careerService
+            width: 90%
+            left: 0
+        &__frame_2
+            left: -3%
+        &__frame_1::after
+            top: 270px
+        &__frame_2::after
+            top: 270px
+@media (max-width: 767px)
+        .s_course
+              &__wrap
+                  width: 100%
+                  padding-left: 0px
+                  box-shadow: 0px 0px 0px 0px
+              &__careerService::before
+                  content: ""
+                  position: absolute
+                  top: 25px
+                  height: 2px
+                  width: 90%
+                  background-color: #000
+              &_title
+                  width: 80%
+                  margin-left: 15%
+                  text-align: center
+              &__rectangle
+                  display: none
+              &__square
+                  display: none
+              &__frame_1
+                  display: none
+              &__frame_2
+                  display: none
+             
+              
