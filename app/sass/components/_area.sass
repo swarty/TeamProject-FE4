@@ -1,0 +1,109 @@
+.s_area
+    padding-top: 110px
+    padding-bottom: 140px
+    +r(1365)
+        padding-bottom: 64px
+        padding-top: 40px
+    +r(767)
+        padding-bottom: 10px
+        padding-top: 35px
+    &__wrap 
+        // position: relative
+        align-items: baseline
+        flex-wrap: wrap
+        justify-content: space-between
+    &__title 
+        max-width: 50%
+        width: 100%  
+        margin-bottom: 45px 
+        transform: translateY(32px)
+        h2
+            max-width: 435px
+            width: 100% 
+            +r(767)
+                max-width: 100%
+                text-align: center
+                padding: 0 5%
+        +r(767)
+            max-width: 100%
+            transform: translateY(0px)
+            
+    &__t-wrap
+        max-width: 435px
+        width: 100%
+        margin-left: 0
+        +r(767)
+            max-width: 100%
+            margin: 0 auto
+    &__block
+        position: relative
+        max-width: 50%
+        width: 100%
+        font-size: 18px
+        // min-height: 160px
+        margin-bottom: 65px
+        &:nth-child(even)
+            padding-left: 20px
+        +r(1365)
+            max-width: 49%
+            margin-bottom: 50px
+            &:nth-child(even)
+                padding-left: 0
+        +r(767)
+            max-width: 100%
+            margin-bottom: 40px
+
+    &__text
+        position: relative
+        max-width: 450px
+        width: 100%
+        &:nth-child(even)
+            max-width: 485px
+        +r(1365)
+            max-width: 100%
+        h3
+            margin-bottom: 15px
+            +r(1365)
+                position: relative
+                padding-left: 40px
+                margin-bottom: 20px
+            +r(767)
+                margin-bottom: 23px
+        p
+            +r(1365)
+                padding-right: 7%
+            +r(767)
+                padding-right: 0
+    &__text-inside
+        font-family: 'OpenSans-ExtraBold', sans-serif
+        border-bottom: 2px solid #00b9d0
+    &__img-wr 
+        position: absolute
+        max-width: 60px
+        max-height: 95px
+        height: 100%
+        width: 100%
+        top: 50%
+        transform: translateY(-50%)
+        left: -70px
+        img
+            height: 100%
+            object-fit: contain
+        +r(1365)
+            max-width: 35px
+            height: 40px
+            left: 0px
+    // &__img-wr img   
+    //     max-height: 76px
+    //     height: 100%
+    //     width: auto
+    &__bg-img 
+        position: absolute
+        height: 100%
+        width: auto
+        top: 0
+        left: -50px 
+    // &__bg-img img
+    //     max-height: 320px
+    //     height: 100%
+    //     width: auto
