@@ -118,9 +118,10 @@
         width: 100%
         font-size: 18px
         background-image: url("../img/bg_img_course_wrap.png")
+        //  background-image: url("../img/bg_img_course_wrap.png") center no-repeat ???
         z-index: 100
         padding-left: 100px
-        box-shadow: 9px 24px 64px 0px rgba(0,0,0,0.11)
+        // box-shadow: 9px 24px 64px 0px rgba(0,0,0,0.11)
     &_title
         max-width: 1000px
         width: 80%
@@ -131,6 +132,8 @@
         background-color: #00b9d0
         margin-bottom: 35px
         margin-top: 10px
+    &__environment
+        width: 95%
     &__careerService
         position: relative
         width: 80%
@@ -222,6 +225,9 @@
         z-index: 20
 @media (max-width: 1365px)
     .s_course
+        &__wrap
+            width: 110%
+            padding-left: 5%
         &__careerService
             margin-left: 5%
         &__rectangle
@@ -234,21 +240,25 @@
         &__frame_2
             left: -3%
         &__frame_1::after
-            top: 270px
+            top: 235px
         &__frame_2::after
-            top: 270px
+            top: 235px
 @media (max-width: 767px)
         .s_course
               &__wrap
-                  width: 100%
-                  padding-left: 0px
-                  box-shadow: 0px 0px 0px 0px
+                  width: 110%
+                  padding-left: 10px
+                  margin-left: -5%
+                  margin-top: -15%
+                  box-shadow: none
+              &__box
+                  margin-left: 10%
               &__careerService::before
                   content: ""
                   position: absolute
                   top: 25px
                   height: 2px
-                  width: 90%
+                  width: 100%
                   background-color: #000
               &_title
                   width: 80%
@@ -262,5 +272,8 @@
                   display: none
               &__frame_2
                   display: none
-             
+@media (max-width: 440px)
+         .s_course
+                 &_title
+                     margin-left: 10%
               
